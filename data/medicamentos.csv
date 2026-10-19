@@ -1,0 +1,645 @@
+﻿id_condicao	variante	via	m	q	p
+abrasao-cornea	Padrão	OFTÁLMICA	Tobramicina colírio 0,3%	1 frasco	Pingar 1 gota no olho afetado de 6/6 horas por 5 dias.
+abrasao-cornea	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado de 4/4 horas.
+abrasao-cornea	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+abscesso-dentario	Alérgico à penicilina	ORAL	Clindamicina 300 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+abscesso-dentario	Alérgico à penicilina	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+abscesso-dentario	Amoxicilina + metronidazol	ORAL	Amoxicilina 500 mg	21 cápsulas	Tomar 1 cápsula de 8/8 horas por 7 dias.
+abscesso-dentario	Amoxicilina + metronidazol	ORAL	Metronidazol 400 mg	21 comprimidos	Tomar 1 comprimido de 8/8 horas por 7 dias.
+abscesso-dentario	Amoxicilina + metronidazol	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+abscesso-mamario	Padrão	ORAL	Cefalexina 500 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+abscesso-mamario	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+abscesso-periamigdaliano	Alérgico à penicilina	ORAL	Clindamicina 300 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+abscesso-periamigdaliano	Alérgico à penicilina	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+abscesso-periamigdaliano	Amoxicilina + clavulanato	ORAL	Amoxicilina + clavulanato 875/125 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+abscesso-periamigdaliano	Amoxicilina + clavulanato	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+abscesso-perianal	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+abscesso-perianal	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+abscesso-perianal	Padrão	ORAL	Psyllium 5,85 g (envelope)	30 envelopes	Diluir 1 envelope em 1 copo de água e tomar 1 vez ao dia.
+acne-leve	Padrão	TÓPICA	Adapaleno 0,1% gel	1 bisnaga	Aplicar fina camada no rosto todo à noite, com a pele seca.
+acne-leve	Padrão	TÓPICA	Peróxido de benzoíla 5% gel	1 bisnaga	Aplicar fina camada nas lesões pela manhã.
+acne-moderada	Padrão	ORAL	Doxiciclina 100 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, após uma refeição e com 1 copo de água, por 3 meses.
+acne-moderada	Padrão	TÓPICA	Adapaleno 0,1% + peróxido de benzoíla 2,5% gel	1 bisnaga	Aplicar fina camada no rosto todo à noite.
+pos-esvaziamento	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+pos-esvaziamento	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+alta-cesarea	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+alta-cesarea	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+alta-cesarea	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	90 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 meses.
+alta-parto-normal	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+alta-parto-normal	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas se cólica ou dor, após as refeições, por até 3 dias.
+alta-parto-normal	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	90 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 meses.
+alveolite	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+alveolite	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+alveolite	Padrão	ORAL	Digluconato de clorexidina 0,12% solução	1 frasco	Bochechar suavemente 15 mL, 2 vezes ao dia. Não engolir.
+ameaca-aborto	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+ameaca-aborto	Padrão	ORAL	Escopolamina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+amebiase	Padrão	ORAL	Metronidazol 500 mg	21 comprimidos	Tomar 1 comprimido de 8/8 horas por 7 dias.
+anafilaxia-alta	Padrão	ORAL	Prednisona 20 mg	6 comprimidos	Tomar 2 comprimidos (40 mg) pela manhã por 3 dias.
+anafilaxia-alta	Padrão	ORAL	Desloratadina 5 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+anafilaxia-alta	Padrão	INTRAMUSCULAR	Adrenalina autoinjetor 0,3 mg	1 unidade	Aplicar na coxa em caso de nova reação grave e procurar o PS imediatamente.
+ancilostomiase	Padrão	ORAL	Albendazol 400 mg	1 comprimido	Tomar 1 comprimido em dose única.
+ancilostomiase	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	60 comprimidos	Tomar 1 comprimido 2 vezes ao dia, antes das refeições, por 2 meses (se anemia).
+anemia	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	60 comprimidos	Tomar 1 comprimido 2 vezes ao dia, 30 minutos antes das refeições, por 3 meses.
+anemia-gestacao	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	90 comprimidos	Tomar 1 comprimido 3 vezes ao dia, 30 minutos antes das refeições, até nova avaliação.
+anemia-gestacao	Padrão	ORAL	Ácido fólico 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia.
+angina-estavel	Padrão	ORAL	Ácido acetilsalicílico 100 mg	30 comprimidos	Tomar 1 comprimido após o almoço, uso contínuo.
+angina-estavel	Padrão	ORAL	Atorvastatina 40 mg	30 comprimidos	Tomar 1 comprimido à noite, uso contínuo.
+angina-estavel	Padrão	ORAL	Succinato de metoprolol 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+angina-estavel	Padrão	SUBLINGUAL	Dinitrato de isossorbida 5 mg	20 comprimidos	Colocar 1 comprimido embaixo da língua se dor no peito. Pode repetir após 5 minutos (máximo 3).
+injetavel-mensal	Padrão	INTRAMUSCULAR	Enantato de noretisterona 50 mg + valerato de estradiol 5 mg	1 ampola	Aplicar 1 ampola via intramuscular no 1º dia da menstruação e depois a cada 30 dias (± 3 dias).
+injetavel-trimestral	Padrão	INTRAMUSCULAR	Acetato de medroxiprogesterona 150 mg/mL	1 frasco-ampola	Aplicar 1 ampola via intramuscular profunda a cada 3 meses (12 semanas). 1ª dose até o 7º dia da menstruação.
+aco-inicio	Padrão	ORAL	Levonorgestrel 0,15 mg + etinilestradiol 0,03 mg	3 cartelas	Iniciar no 1º dia da menstruação: tomar 1 comprimido ao dia, sempre no mesmo horário, por 21 dias. Fazer pausa de 7 dias e iniciar nova cartela.
+artrite-reumatoide-crise	Padrão	ORAL	Prednisona 5 mg	28 comprimidos	Tomar 2 comprimidos (10 mg) pela manhã por 7 dias; depois, 1 comprimido por 14 dias e suspender.
+artrite-reumatoide-crise	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+artrose	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+artrose	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar na articulação 3 vezes ao dia por 14 dias.
+ascaridiase	Padrão	ORAL	Albendazol 400 mg	1 comprimido	Tomar 1 comprimido em dose única.
+asma	Padrão	INALATÓRIA	Salbutamol spray 100 mcg/dose + espaçador	1 frasco	Aplicar 4 jatos com espaçador de 4/4 horas se falta de ar ou chiado.
+asma	Padrão	ORAL	Prednisona 20 mg	10 comprimidos	Tomar 2 comprimidos pela manhã por 5 dias.
+asma	Padrão	INALATÓRIA	Budesonida + formoterol 6/200 mcg	1 frasco	Aplicar 1 inalação de 12/12 horas, uso contínuo. Enxaguar a boca após o uso.
+asma-manutencao	Padrão	INALATÓRIA	Budesonida + formoterol 6/200 mcg (pó inalante)	1 inalador (60 doses)	Fazer 1 inalação de 12/12 horas e 1 inalação extra se falta de ar (máximo 8 inalações por dia). Enxaguar a boca após o uso.
+balanopostite	Padrão	TÓPICA	Miconazol creme 2%	1 bisnaga	Aplicar na glande e prepúcio 2 vezes ao dia por 7 a 14 dias.
+barotrauma	Padrão	NASAL	Oximetazolina 0,05% spray nasal	1 frasco	Aplicar 2 jatos em cada narina de 12/12 horas por no máximo 3 dias.
+barotrauma	Padrão	ORAL	Ibuprofeno 400 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+bartholinite	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+bartholinite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+bartholinite	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+bexiga-hiperativa	Padrão	ORAL	Oxibutinina 5 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, uso contínuo.
+blefarite	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota em cada olho 4 vezes ao dia.
+blefarite	Padrão	OFTÁLMICA	Tobramicina pomada oftálmica 0,3%	1 bisnaga	Aplicar na borda das pálpebras à noite por 7 dias.
+bronquiectasia	Amoxicilina + clavulanato	ORAL	Amoxicilina + clavulanato 875/125 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+bronquiectasia	Pseudomonas conhecida	ORAL	Ciprofloxacino 750 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+bronquite	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+bronquite	Padrão	ORAL	Mel ou xarope de guaco	1 frasco	Tomar 10 mL 3 vezes ao dia se tosse.
+bursite-olecrano	Asséptica	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+bursite-olecrano	Séptica (após punção)	ORAL	Cefalexina 500 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+bursite-trocanterica	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+bursite-trocanterica	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar na lateral do quadril 3 vezes ao dia.
+calazio	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado 4 vezes ao dia.
+cancro-mole	Padrão	ORAL	Azitromicina 500 mg	2 comprimidos	Tomar 2 comprimidos juntos, em dose única.
+candidiase-oral	Padrão	ORAL	Nistatina suspensão oral 100.000 UI/mL	1 frasco	Bochechar 5 mL por 1 minuto e engolir, 4 vezes ao dia, por 14 dias.
+candidiase	Oral	ORAL	Fluconazol 150 mg	1 cápsula	Tomar 1 cápsula em dose única.
+candidiase	Vaginal	VAGINAL	Miconazol creme vaginal 2%	1 bisnaga	Aplicar 1 aplicador cheio à noite, ao deitar, por 7 dias.
+candidiase-gestante	Padrão	VAGINAL	Miconazol creme vaginal 2%	1 bisnaga	Aplicar 1 aplicador cheio à noite, ao deitar, por 7 dias.
+candidiase-recorrente	Indução + manutenção	ORAL	Fluconazol 150 mg	3 cápsulas	Tomar 1 cápsula nos dias 1, 4 e 7.
+candidiase-recorrente	Indução + manutenção	ORAL	Fluconazol 150 mg	24 cápsulas	Depois, tomar 1 cápsula 1 vez por semana por 6 meses.
+ombro-congelado	Padrão	ORAL	Naproxeno 500 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias, após as refeições.
+ombro-congelado	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+caxumba	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+caxumba	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor ou febre, se não puder usar dipirona.
+cefaleia-salvas	Padrão	ORAL	Prednisona 20 mg	20 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 5 dias; depois, reduzir 1 comprimido a cada 3 dias até suspender.
+cefaleia-salvas	Padrão	ORAL	Verapamil 80 mg	90 comprimidos	Tomar 1 comprimido de 8/8 horas, uso contínuo durante o período de salvas.
+cefaleia-gestante	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor (máximo 4 por dia).
+cefaleia-gestante	Padrão	ORAL	Metoclopramida 10 mg	10 comprimidos	Tomar 1 comprimido até de 8/8 horas se náusea.
+cefaleia-abuso	Padrão	ORAL	Naproxeno 500 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias, após as refeições (terapia de transição).
+cefaleia-abuso	Padrão	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido à noite por 1 semana; depois, 1 comprimido à noite.
+cefaleia-pos-raqui	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cefaleia-pos-raqui	Padrão	ORAL	Paracetamol 500 mg + cafeína 65 mg	1 caixa	Tomar 1 comprimido de 8/8 horas por 3 dias.
+cefaleia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cefaleia	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor, alternando com a dipirona se necessário.
+cefaleia-tensional-cronica	Padrão	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido à noite por 1 semana; depois, 1 comprimido à noite.
+celulite	Alérgico à penicilina	ORAL	Clindamicina 300 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+celulite	Alérgico à penicilina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+celulite	Cefalexina	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+celulite	Cefalexina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+celulite-preseptal	Alérgico à penicilina	ORAL	Clindamicina 300 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+celulite-preseptal	Amoxicilina + clavulanato	ORAL	Amoxicilina + clavulanato 875/125 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+celulite-preseptal	Amoxicilina + clavulanato	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+ceratite-actinica	Padrão	OFTÁLMICA	Tobramicina colírio 0,3%	1 frasco	Pingar 1 gota em cada olho de 6/6 horas por 5 dias.
+ceratite-actinica	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota em cada olho de 2/2 horas.
+ceratite-actinica	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cerume	Padrão	OTOLÓGICA	Oleato de trietanolamina solução otológica	1 frasco	Pingar 5 gotas no ouvido afetado 3 vezes ao dia por 4 dias, antes da lavagem.
+cervicalgia	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+cervicalgia	Padrão	ORAL	Ciclobenzaprina 5 mg	7 comprimidos	Tomar 1 comprimido à noite por 7 dias. Pode causar sonolência.
+cervicalgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cervicite	Padrão	INTRAMUSCULAR	Ceftriaxona 500 mg	1 frasco-ampola	Aplicar 1 ampola via intramuscular, dose única.
+cervicite	Padrão	ORAL	Azitromicina 500 mg	2 comprimidos	Tomar 2 comprimidos juntos, em dose única.
+cervicobraquialgia	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+cervicobraquialgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cervicobraquialgia	Padrão	ORAL	Pregabalina 75 mg	14 cápsulas	Tomar 1 cápsula à noite por 14 dias. Pode causar sonolência e tontura.
+chikungunya	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+chikungunya	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas, alternando com a dipirona se dor intensa.
+cinetose	Padrão	ORAL	Dimenidrinato 50 mg + piridoxina 10 mg	1 caixa	Tomar 1 comprimido 30 a 60 minutos antes da viagem. Pode repetir de 6/6 horas.
+itu-gestante	Cefalexina	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+itu-gestante	Nitrofurantoína	ORAL	Nitrofurantoína 100 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+itu-complicada	Padrão	ORAL	Cefuroxima 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+itu	Fosfomicina (dose única)	ORAL	Fosfomicina trometamol 3 g	1 envelope	Diluir o envelope em meio copo de água e tomar em dose única, à noite, com a bexiga vazia.
+itu	Fosfomicina (dose única)	ORAL	Fenazopiridina 200 mg	6 comprimidos	Tomar 1 comprimido de 8/8 horas por 2 dias. A urina pode ficar alaranjada.
+itu	Nitrofurantoína	ORAL	Nitrofurantoína 100 mg	20 cápsulas	Tomar 1 cápsula de 6/6 horas por 5 dias.
+itu	Nitrofurantoína	ORAL	Fenazopiridina 200 mg	6 comprimidos	Tomar 1 comprimido de 8/8 horas por 2 dias. A urina pode ficar alaranjada.
+cisto-inflamado	Com celulite	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+cisto-inflamado	Com celulite	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+cisto-inflamado	Sem celulite	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+condiloma	Padrão	TÓPICA	Imiquimode creme 5% (sachê)	12 sachês	Aplicar fina camada nas lesões à noite, 3 vezes por semana (dias alternados). Lavar após 6 a 10 horas. Usar por até 16 semanas.
+conjuntivite	Bacteriana	OFTÁLMICA	Tobramicina colírio 0,3%	1 frasco	Pingar 1 gota no olho afetado de 4/4 horas por 7 dias.
+conjuntivite	Viral	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota em cada olho de 4/4 horas.
+conj-alergica	Padrão	OFTÁLMICA	Olopatadina colírio 0,1%	1 frasco	Pingar 1 gota em cada olho de 12/12 horas por 14 dias.
+conj-alergica	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+constipacao-opioide	Padrão	ORAL	Lactulose 667 mg/mL	1 frasco	Tomar 15 a 30 mL 1 vez ao dia enquanto usar o opioide.
+constipacao-opioide	Padrão	ORAL	Bisacodil 5 mg	20 comprimidos	Tomar 1 a 2 comprimidos à noite se não evacuar em 2 dias.
+constipacao	Padrão	ORAL	Lactulose 667 mg/mL	1 frasco	Tomar 15 mL 1 vez ao dia. Ajustar a dose conforme o funcionamento do intestino.
+constipacao-gestacao	Padrão	ORAL	Psyllium 5,85 g (envelope)	30 envelopes	Diluir 1 envelope em 1 copo de água e tomar 1 a 2 vezes ao dia.
+constipacao-gestacao	Padrão	ORAL	Lactulose 667 mg/mL	1 frasco	Se necessário: tomar 15 mL 1 vez ao dia, ajustando conforme o intestino.
+contracepcao-emergencia	Padrão	ORAL	Levonorgestrel 1,5 mg	1 comprimido	Tomar 1 comprimido em dose única, o mais rápido possível (até 72 horas após a relação).
+contusao	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+contusao	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no local 3 vezes ao dia por 7 dias.
+coqueluche	Alternativa	ORAL	Sulfametoxazol + trimetoprima 800/160 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+coqueluche	Azitromicina	ORAL	Azitromicina 500 mg	1 comprimido	Tomar 1 comprimido no 1º dia.
+coqueluche	Azitromicina	ORAL	Azitromicina 250 mg	4 comprimidos	Tomar 1 comprimido 1 vez ao dia do 2º ao 5º dia.
+corrimento-sindromico	Padrão	ORAL	Metronidazol 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+corrimento-sindromico	Padrão	ORAL	Fluconazol 150 mg	1 cápsula	Tomar 1 cápsula em dose única (se coceira e corrimento branco grumoso).
+covid	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+covid	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor ou febre, se não puder usar dipirona.
+covid	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 4 vezes ao dia.
+ansiedade	Padrão	ORAL	Hidroxizina 25 mg	20 comprimidos	Tomar 1 comprimido até de 8/8 horas se ansiedade, por até 7 dias. Pode causar sonolência.
+gota	Colchicina + AINE	ORAL	Colchicina 0,5 mg	20 comprimidos	Tomar 2 comprimidos no início da crise e 1 comprimido após 1 hora. Depois, 1 comprimido de 12/12 horas até a melhora.
+gota	Colchicina + AINE	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+gota	Corticoide	ORAL	Prednisona 20 mg	10 comprimidos	Tomar 2 comprimidos pela manhã por 5 dias.
+caimbras	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido se dor residual após a cãibra.
+colica-biliar	Padrão	ORAL	Escopolamina 10 mg + dipirona 250 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+colica-biliar	Padrão	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea.
+dismenorreia	Padrão	ORAL	Ácido mefenâmico 500 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por até 3 dias, após as refeições.
+dismenorreia	Padrão	ORAL	Escopolamina 10 mg + dipirona 250 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+colica-renal	Padrão	ORAL	Cetoprofeno 100 mg	10 comprimidos	Tomar 1 comprimido de 12/12 horas por 5 dias, após as refeições.
+colica-renal	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+colica-renal	Padrão	ORAL	Escopolamina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+colica-renal	Padrão	ORAL	Tansulosina 0,4 mg	30 cápsulas	Tomar 1 cápsula à noite por até 30 dias ou até a eliminação do cálculo.
+dacriocistite	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+dacriocistite	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+dedo-gatilho	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+deficiencia-b12	Intramuscular	INTRAMUSCULAR	Cianocobalamina 5.000 mcg/2 mL	5 ampolas	Aplicar 1 ampola IM a cada 2 dias (5 doses) e depois 1 por mês.
+deficiencia-b12	Oral	ORAL	Cianocobalamina 1.000 mcg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 meses.
+vitamina-d	Padrão	ORAL	Colecalciferol 50.000 UI	8 cápsulas	Tomar 1 cápsula 1 vez por semana por 8 semanas, junto com uma refeição.
+vitamina-d	Padrão	ORAL	Colecalciferol 7.000 UI	4 cápsulas	Depois, tomar 1 cápsula 1 vez por semana para manutenção.
+dengue	Padrão	ORAL	Sais para reidratação oral	10 envelopes	Beber 60 mL/kg/dia de líquidos, sendo 1/3 de soro de reidratação e o restante água, sucos e chás.
+dengue	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+dengue	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre, se não puder usar dipirona.
+depressao-pos-parto	Sertralina	ORAL	Sertralina 50 mg	30 comprimidos	Tomar meio comprimido pela manhã por 7 dias; depois, 1 comprimido pela manhã, uso contínuo.
+dermatite-atopica	Padrão	TÓPICA	Mometasona 0,1% creme	1 bisnaga	Aplicar nas lesões do corpo 1 vez ao dia por até 14 dias.
+dermatite-atopica	Padrão	TÓPICA	Hidrocortisona 1% creme	1 bisnaga	Aplicar nas lesões do rosto e dobras 2 vezes ao dia por até 7 dias.
+dermatite-atopica	Padrão	TÓPICA	Hidratante para pele atópica (sem perfume)	1 frasco	Aplicar no corpo todo 2 vezes ao dia, logo após o banho.
+dermatite-atopica	Padrão	ORAL	Hidroxizina 25 mg	14 comprimidos	Tomar 1 comprimido à noite se coceira.
+dermatite-contato	Padrão	TÓPICA	Dexametasona creme 0,1%	1 bisnaga	Aplicar nas lesões 2 vezes ao dia por 7 dias. Não usar no rosto por mais de 5 dias.
+dermatite-contato	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+taturana	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+taturana	Padrão	TÓPICA	Dexametasona creme 0,1%	1 bisnaga	Aplicar no local 2 vezes ao dia por 5 dias.
+dermatite-seborreica	Padrão	TÓPICA	Cetoconazol xampu 2%	1 frasco	Lavar o couro cabeludo e deixar agir 5 minutos, 3 vezes por semana por 4 semanas; depois, 1 vez por semana.
+dermatite-seborreica	Padrão	TÓPICA	Cetoconazol creme 2%	1 bisnaga	Aplicar nas áreas do rosto 1 vez ao dia por 2 a 4 semanas.
+desidratacao-leve	Padrão	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber aos poucos ao longo do dia.
+dm2-associacao	Padrão	ORAL	Metformina 850 mg	60 comprimidos	Tomar 1 comprimido no café e 1 no jantar, uso contínuo.
+dm2-associacao	Padrão	ORAL	Gliclazida MR 30 mg	30 comprimidos	Tomar 1 comprimido no café da manhã, uso contínuo.
+dm2-inicio	Padrão	ORAL	Metformina 500 mg	60 comprimidos	Tomar 1 comprimido no jantar por 1 semana; depois, 1 comprimido no café e 1 no jantar. Aumentar até 850 mg 2 vezes ao dia conforme tolerância.
+dm2-insulina	Padrão	SUBCUTÂNEA	Insulina humana NPH 100 UI/mL	1 frasco ou caneta	Aplicar 10 UI por via subcutânea às 22 horas. Aumentar 2 UI a cada 3 dias até glicemia de jejum entre 80 e 130.
+dm2-insulina	Padrão	SUBCUTÂNEA	Agulhas para caneta/seringas de insulina	1 caixa	Usar conforme a aplicação.
+dm2-insulina	Padrão	ORAL	Metformina 850 mg	60 comprimidos	Manter 1 comprimido no café e 1 no jantar.
+disenteria	Azitromicina	ORAL	Azitromicina 500 mg	3 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 dias.
+disenteria	Azitromicina	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber após cada evacuação líquida.
+disenteria	Ciprofloxacino	ORAL	Ciprofloxacino 500 mg	6 comprimidos	Tomar 1 comprimido de 12/12 horas por 3 dias.
+disenteria	Ciprofloxacino	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber após cada evacuação líquida.
+clostridioides	Metronidazol (alternativa)	ORAL	Metronidazol 500 mg	30 comprimidos	Tomar 1 comprimido de 8/8 horas por 10 dias.
+clostridioides	Vancomicina oral	ORAL	Vancomicina 125 mg (cápsula ou solução oral manipulada)	40 doses	Tomar 125 mg de 6/6 horas por 10 dias.
+disfuncao-eretil	Sildenafila	ORAL	Sildenafila 50 mg	4 comprimidos	Tomar 1 comprimido cerca de 1 hora antes da relação. Máximo 1 vez ao dia.
+disfuncao-eretil	Tadalafila	ORAL	Tadalafila 20 mg	4 comprimidos	Tomar 1 comprimido pelo menos 30 minutos antes da relação. Máximo 1 vez ao dia.
+gastrite	Padrão	ORAL	Omeprazol 20 mg	30 cápsulas	Tomar 1 cápsula em jejum, 30 minutos antes do café da manhã, por 30 dias.
+gastrite	Padrão	ORAL	Hidróxido de alumínio + hidróxido de magnésio	1 frasco	Tomar 10 mL até 3 vezes ao dia se queimação.
+dispepsia-funcional	Padrão	ORAL	Domperidona 10 mg	30 comprimidos	Tomar 1 comprimido 15 a 30 minutos antes das principais refeições por 10 dias.
+dispepsia-funcional	Padrão	ORAL	Omeprazol 20 mg	28 cápsulas	Tomar 1 cápsula em jejum por 4 semanas (se dor/queimação).
+gases	Padrão	ORAL	Simeticona 125 mg	1 caixa	Tomar 1 cápsula de 8/8 horas, após as refeições, se desconforto.
+distonia-aguda	Padrão	ORAL	Biperideno 2 mg	6 comprimidos	Tomar 1 comprimido de 12/12 horas por 3 dias.
+diverticulite	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+diverticulite	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+diverticulite	Padrão	ORAL	Escopolamina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+dap	Padrão	ORAL	Ácido acetilsalicílico 100 mg	30 comprimidos	Tomar 1 comprimido após o almoço, uso contínuo.
+dap	Padrão	ORAL	Atorvastatina 40 mg	30 comprimidos	Tomar 1 comprimido à noite, uso contínuo.
+dap	Padrão	ORAL	Cilostazol 100 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, 30 minutos antes ou 2 horas após as refeições.
+meniere	Padrão	ORAL	Dimenidrinato 50 mg + piridoxina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se tontura, por até 5 dias.
+meniere	Padrão	ORAL	Betaistina 24 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, uso contínuo.
+drge	Padrão	ORAL	Omeprazol 20 mg	56 cápsulas	Tomar 1 cápsula em jejum, 30 minutos antes do café da manhã, por 8 semanas.
+hemorroida	Padrão	TÓPICA	Policresuleno + cinchocaína pomada	1 bisnaga	Aplicar na região anal 2 a 3 vezes ao dia, após evacuar e higienizar, por 7 dias.
+hemorroida	Padrão	ORAL	Diosmina 450 mg + hesperidina 50 mg	1 caixa	Tomar 2 comprimidos de 12/12 horas por 4 dias e depois 1 comprimido de 12/12 horas por 3 dias.
+hemorroida	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+hemorroida-gestacao	Padrão	TÓPICA	Lidocaína gel 2%	1 bisnaga	Aplicar na região anal até 3 vezes ao dia se dor.
+hemorroida-gestacao	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+hemorroida-gestacao	Padrão	ORAL	Psyllium 5,85 g (envelope)	30 envelopes	Diluir 1 envelope em 1 copo de água e tomar 1 vez ao dia.
+dip	Padrão	INTRAMUSCULAR	Ceftriaxona 500 mg	1 frasco-ampola	Aplicar 1 ampola via intramuscular, dose única.
+dip	Padrão	ORAL	Doxiciclina 100 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+dip	Padrão	ORAL	Metronidazol 500 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+dip	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+mao-pe-boca	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+mao-pe-boca	Padrão	TÓPICA	Lidocaína gel 2% (uso oral)	1 bisnaga	Aplicar sobre as aftas antes das refeições, se dor.
+donovanose	Padrão	ORAL	Doxiciclina 100 mg	42 comprimidos	Tomar 1 comprimido de 12/12 horas por pelo menos 21 dias (até a cicatrização completa).
+dor-intensa	Codeína	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas.
+dor-intensa	Codeína	ORAL	Paracetamol 500 mg + codeína 30 mg	20 comprimidos	Tomar 1 comprimido de 6/6 horas se dor forte, por até 5 dias.
+dor-intensa	Tramadol	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas.
+dor-intensa	Tramadol	ORAL	Tramadol 50 mg	20 cápsulas	Tomar 1 cápsula de 8/8 horas se dor forte, por até 5 dias.
+dor-intensa	Tramadol	ORAL	Ondansetrona 4 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea.
+odontalgia	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+odontalgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+dor-ovulatoria	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+dor-ovulatoria	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+costocondrite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+costocondrite	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+dpoc	Padrão	INALATÓRIA	Salbutamol spray 100 mcg/dose + espaçador	1 frasco	Aplicar 4 jatos com espaçador de 4/4 horas se falta de ar.
+dpoc	Padrão	ORAL	Prednisona 20 mg	10 comprimidos	Tomar 2 comprimidos pela manhã por 5 dias.
+dpoc	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+pico-hipertensivo	Já usa anti-hipertensivo	ORAL	Manter medicações de uso habitual	—	Tomar conforme prescrição anterior, sem interromper. Reavaliação na UBS em até 7 dias.
+pico-hipertensivo	Sem tratamento prévio	ORAL	Losartana 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo, até reavaliação na UBS.
+dor-endometriose	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+dor-endometriose	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+dor-endometriose	Padrão	ORAL	Escopolamina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+entorse-joelho	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+entorse-joelho	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+entorse	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+entorse	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+entorse	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no local 3 vezes ao dia por 7 dias.
+enxaqueca	Padrão	ORAL	Naproxeno 550 mg	10 comprimidos	Tomar 1 comprimido no início da crise. Pode repetir após 12 horas.
+enxaqueca	Padrão	ORAL	Sumatriptana 50 mg	2 comprimidos	Tomar 1 comprimido no início da crise. Pode repetir após 2 horas se necessário (máximo 200 mg/dia).
+enxaqueca	Padrão	ORAL	Metoclopramida 10 mg	10 comprimidos	Tomar 1 comprimido se náusea, até 8/8 horas.
+enxaqueca-profilaxia	Amitriptilina	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido à noite por 1 semana; depois, 1 comprimido à noite.
+enxaqueca-profilaxia	Propranolol	ORAL	Propranolol 40 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, uso contínuo.
+episclerite	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado 4 vezes ao dia.
+episclerite	Padrão	ORAL	Ibuprofeno 400 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+epistaxe	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 2 jatos em cada narina 3 vezes ao dia por 7 dias.
+epistaxe	Padrão	NASAL	Vaselina sólida	1 pote	Aplicar pequena quantidade na entrada das narinas 2 vezes ao dia por 7 dias.
+depressao	Fluoxetina	ORAL	Fluoxetina 20 mg	30 cápsulas	Tomar 1 cápsula pela manhã, uso contínuo.
+depressao	Sertralina	ORAL	Sertralina 50 mg	30 comprimidos	Tomar meio comprimido pela manhã por 7 dias; depois, 1 comprimido pela manhã, uso contínuo.
+profilaxia-erisipela	Padrão	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	1 frasco-ampola	Aplicar 1 ampola via intramuscular profunda a cada 21 dias, por no mínimo 6 meses.
+h-pylori	Tripla padrão (14 dias)	ORAL	Omeprazol 20 mg	28 cápsulas	Tomar 1 cápsula de 12/12 horas, 30 minutos antes do café e do jantar, por 14 dias.
+h-pylori	Tripla padrão (14 dias)	ORAL	Amoxicilina 500 mg	56 cápsulas	Tomar 2 cápsulas (1 g) de 12/12 horas por 14 dias.
+h-pylori	Tripla padrão (14 dias)	ORAL	Claritromicina 500 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias.
+escabiose	Ivermectina	ORAL	Ivermectina 6 mg	4 comprimidos	Tomar 200 mcg/kg em dose única (60 kg = 2 comprimidos). Repetir a mesma dose após 7 dias.
+escabiose	Ivermectina	ORAL	Hidroxizina 25 mg	10 comprimidos	Tomar 1 comprimido à noite se coceira. Pode causar sonolência.
+escabiose	Permetrina	TÓPICA	Permetrina loção 5%	1 frasco	Aplicar do pescoço para baixo à noite e retirar no banho pela manhã. Repetir após 7 dias.
+escabiose	Permetrina	ORAL	Hidroxizina 25 mg	10 comprimidos	Tomar 1 comprimido à noite se coceira. Pode causar sonolência.
+escarlatina	Amoxicilina	ORAL	Amoxicilina 500 mg	30 cápsulas	Tomar 1 cápsula de 8/8 horas por 10 dias.
+escarlatina	Dose única IM	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	1 frasco-ampola	Aplicar 1 ampola via intramuscular profunda, dose única.
+esquistossomose	Padrão	ORAL	Praziquantel 600 mg	6 comprimidos	Tomar 50 mg/kg em dose única, após uma refeição (60 kg = 5 comprimidos).
+afta	Padrão	TÓPICA	Triancinolona acetonida 1 mg/g pomada orabase	1 bisnaga	Aplicar sobre a afta 3 vezes ao dia, após as refeições, por 7 dias.
+estrongiloidiase	Padrão	ORAL	Ivermectina 6 mg	4 comprimidos	Tomar 200 mcg/kg 1 vez ao dia por 2 dias (60 kg = 2 comprimidos por dia).
+insolacao	Padrão	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber aos poucos ao longo do dia.
+insolacao	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor de cabeça.
+faringite-viral	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+faringite-viral	Padrão	ORAL	Ibuprofeno 400 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+faringite-viral	Padrão	ORAL	Benzocaína + cloreto de cetilpiridínio pastilhas	1 caixa	Dissolver 1 pastilha na boca a cada 3 horas se dor (máximo 8 por dia).
+amigdalite	Alérgico à penicilina	ORAL	Azitromicina 500 mg	3 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 dias.
+amigdalite	Alérgico à penicilina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+amigdalite	Amoxicilina	ORAL	Amoxicilina 500 mg	30 cápsulas	Tomar 1 cápsula de 8/8 horas por 10 dias.
+amigdalite	Amoxicilina	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+amigdalite	Amoxicilina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+amigdalite	Dose única IM	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	1 frasco-ampola	Aplicar 1 ampola via intramuscular profunda, dose única.
+amigdalite	Dose única IM	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+farmacodermia	Extenso	ORAL	Desloratadina 5 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+farmacodermia	Extenso	ORAL	Prednisona 20 mg	10 comprimidos	Tomar 2 comprimidos (40 mg) pela manhã por 5 dias.
+farmacodermia	Leve	ORAL	Desloratadina 5 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+fascite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+fascite	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no calcanhar 3 vezes ao dia por 10 dias.
+ferimento	Contaminado	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+ferimento	Contaminado	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+ferimento	Limpo	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+fa-ambulatorial	Rivaroxabana	ORAL	Succinato de metoprolol 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia.
+fa-ambulatorial	Rivaroxabana	ORAL	Rivaroxabana 20 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, junto com o jantar, uso contínuo.
+fa-ambulatorial	Varfarina	ORAL	Succinato de metoprolol 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia.
+fa-ambulatorial	Varfarina	ORAL	Varfarina 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, sempre no mesmo horário. Controle de INR em 5 a 7 dias.
+fibromialgia	Padrão	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido à noite por 2 semanas; depois, 1 comprimido à noite.
+fissura-anal	Padrão	TÓPICA	Diltiazem 2% pomada (manipulada)	30 g	Aplicar na região anal de 12/12 horas por 6 semanas.
+fissura-anal	Padrão	TÓPICA	Lidocaína gel 2%	1 bisnaga	Aplicar na região anal antes de evacuar, se dor.
+fissura-anal	Padrão	ORAL	Psyllium 5,85 g (envelope)	30 envelopes	Diluir 1 envelope em 1 copo de água e tomar 1 vez ao dia.
+fissura-mamilar	Padrão	TÓPICA	Lanolina pura (creme)	1 bisnaga	Aplicar fina camada nos mamilos após cada mamada. Não precisa retirar antes de amamentar.
+fissura-mamilar	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+fratura-costela	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas.
+fratura-costela	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+fratura-costela	Padrão	ORAL	Tramadol 50 mg	20 cápsulas	Tomar 1 cápsula de 8/8 horas se dor forte, por até 5 dias.
+fratura-alta	Dor intensa (+ opioide)	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+fratura-alta	Dor intensa (+ opioide)	ORAL	Paracetamol 500 mg + codeína 30 mg	20 comprimidos	Tomar 1 comprimido de 6/6 horas se dor forte, por até 5 dias.
+fratura-alta	Dor moderada	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+fratura-alta	Dor moderada	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+tinea-pedis	Padrão	TÓPICA	Terbinafina creme 1%	1 bisnaga	Aplicar entre os dedos e nas áreas afetadas 2 vezes ao dia por 2 semanas.
+ftiriase	Padrão	TÓPICA	Permetrina 1% loção	1 frasco	Aplicar na região pubiana e áreas com pelos, deixar 10 minutos e enxaguar. Repetir após 7 dias.
+furunculo	Padrão	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+furunculo	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+gastroenterite	Padrão	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber após cada evacuação líquida.
+gastroenterite	Padrão	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea ou vômito.
+gastroenterite	Padrão	ORAL	Escopolamina 10 mg + dipirona 250 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+gastroenterite	Padrão	ORAL	Saccharomyces boulardii 200 mg	10 cápsulas	Tomar 1 cápsula de 12/12 horas por 5 dias.
+gun	Padrão	ORAL	Metronidazol 400 mg	21 comprimidos	Tomar 1 comprimido de 8/8 horas por 7 dias.
+gun	Padrão	ORAL	Digluconato de clorexidina 0,12% solução	1 frasco	Bochechar 15 mL por 1 minuto, 2 vezes ao dia, após escovar. Não engolir.
+gun	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+gengivoestomatite-herpetica	Padrão	ORAL	Aciclovir 400 mg	21 comprimidos	Tomar 1 comprimido de 8/8 horas por 7 dias.
+gengivoestomatite-herpetica	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+gengivoestomatite-herpetica	Padrão	TÓPICA	Lidocaína gel 2% (uso oral)	1 bisnaga	Aplicar nas lesões antes das refeições.
+giardiase	Metronidazol	ORAL	Metronidazol 250 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias.
+giardiase	Secnidazol	ORAL	Secnidazol 1 g	2 comprimidos	Tomar 2 comprimidos em dose única, após uma refeição.
+gota-profilaxia	Padrão	ORAL	Alopurinol 100 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, após uma refeição. A dose será aumentada gradualmente conforme o ácido úrico.
+gota-profilaxia	Padrão	ORAL	Colchicina 0,5 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas nos primeiros 3 a 6 meses (prevenção de crises).
+hemorragia-subconjuntival	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado 4 vezes ao dia se desconforto.
+hepatite-a	Padrão	ORAL	Ondansetrona 4 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea.
+hepatite-a	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre (evitar paracetamol).
+herpes-genital	Primeiro episódio	ORAL	Aciclovir 200 mg	42 comprimidos	Tomar 2 comprimidos (400 mg) de 8/8 horas por 7 dias.
+herpes-genital	Primeiro episódio	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+herpes-genital	Recorrência	ORAL	Aciclovir 200 mg	30 comprimidos	Tomar 2 comprimidos (400 mg) de 8/8 horas por 5 dias.
+herpes-labial	Padrão	TÓPICA	Aciclovir creme 5%	1 bisnaga	Aplicar nas lesões 5 vezes ao dia por 5 dias.
+herpes-zoster	Padrão	ORAL	Aciclovir 400 mg	70 comprimidos	Tomar 2 comprimidos (800 mg) 5 vezes ao dia por 7 dias.
+herpes-zoster	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+zoster-oftalmico	Padrão	ORAL	Aciclovir 400 mg	70 comprimidos	Tomar 2 comprimidos (800 mg) 5 vezes ao dia por 7 dias.
+zoster-oftalmico	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado 4 a 6 vezes ao dia.
+zoster-oftalmico	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+ramsay-hunt	Padrão	ORAL	Valaciclovir 500 mg	42 comprimidos	Tomar 2 comprimidos (1 g) de 8/8 horas por 7 dias.
+ramsay-hunt	Padrão	ORAL	Prednisona 20 mg	20 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 5 dias; depois, reduzir 1 comprimido por dia.
+ramsay-hunt	Padrão	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho do lado afetado de 2/2 horas durante o dia.
+hidradenite	Padrão	ORAL	Doxiciclina 100 mg	28 comprimidos	Tomar 1 comprimido de 12/12 horas por 14 dias, após uma refeição.
+hidradenite	Padrão	TÓPICA	Clindamicina 1% solução	1 frasco	Aplicar nas lesões 2 vezes ao dia.
+hidradenite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+dislipidemia	Alta intensidade	ORAL	Atorvastatina 40 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+dislipidemia	Moderada intensidade	ORAL	Atorvastatina 20 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+hpb	Alfabloqueador	ORAL	Tansulosina 0,4 mg	30 cápsulas	Tomar 1 cápsula à noite, uso contínuo.
+hpb	Próstata volumosa (+ finasterida)	ORAL	Tansulosina 0,4 mg	30 cápsulas	Tomar 1 cápsula à noite, uso contínuo.
+hpb	Próstata volumosa (+ finasterida)	ORAL	Finasterida 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+has-combinacao	BRA + anlodipino	ORAL	Losartana 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+has-combinacao	BRA + anlodipino	ORAL	Anlodipino 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+has-combinacao	BRA + tiazídico	ORAL	Losartana 50 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+has-combinacao	BRA + tiazídico	ORAL	Hidroclorotiazida 25 mg	15 comprimidos	Tomar meio comprimido (12,5 mg) pela manhã, uso contínuo.
+has-gestacional	Metildopa	ORAL	Metildopa 250 mg	90 comprimidos	Tomar 1 comprimido de 8/8 horas. Ajustar a dose no pré-natal conforme a pressão.
+hipertireoidismo	Padrão	ORAL	Metimazol 10 mg	60 comprimidos	Tomar 2 comprimidos (20 mg) 1 vez ao dia.
+hipertireoidismo	Padrão	ORAL	Propranolol 40 mg	90 comprimidos	Tomar 1 comprimido de 8/8 horas para controle de palpitação e tremor.
+hipertrigliceridemia	Padrão	ORAL	Ciprofibrato 100 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+hipocalemia	Padrão	ORAL	Cloreto de potássio xarope 6%	1 frasco	Tomar 15 mL diluídos em meio copo de água ou suco, de 8/8 horas, após as refeições, por 5 dias.
+hipotireoidismo	Adulto jovem	ORAL	Levotiroxina 50 mcg	30 comprimidos	Tomar 1 comprimido em jejum, 30 a 60 minutos antes do café da manhã, uso contínuo.
+hipotireoidismo	Idoso / cardiopata	ORAL	Levotiroxina 25 mcg	30 comprimidos	Tomar 1 comprimido em jejum, 30 a 60 minutos antes do café da manhã, uso contínuo.
+hordeolo	Padrão	OFTÁLMICA	Tobramicina pomada oftálmica 0,3%	1 bisnaga	Aplicar na borda da pálpebra afetada 3 vezes ao dia por 7 dias.
+hernia-inguinal	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+impetigo	Extenso	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+impetigo	Extenso	TÓPICA	Mupirocina 2% pomada	1 bisnaga	Aplicar nas lesões 3 vezes ao dia por 7 dias.
+impetigo	Localizado	TÓPICA	Mupirocina 2% pomada	1 bisnaga	Aplicar nas lesões 3 vezes ao dia por 7 dias, após lavar com água e sabão.
+infeccao-ferida-obst	Padrão	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+infeccao-ferida-obst	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+itu-homem	Ciprofloxacino	ORAL	Ciprofloxacino 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+itu-homem	SMX-TMP	ORAL	Sulfametoxazol + trimetoprima 800/160 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+influenza-profilaxia	Padrão	ORAL	Oseltamivir 75 mg	10 cápsulas	Tomar 1 cápsula 1 vez ao dia por 10 dias.
+ingurgitamento	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+ingurgitamento	Padrão	ORAL	Ibuprofeno 400 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+inibicao-lactacao	Padrão	ORAL	Cabergolina 0,5 mg	2 comprimidos	Tomar 2 comprimidos (1 mg) em dose única, no 1º dia após o parto.
+icc-alta	ICFEr (modelo)	ORAL	Furosemida 40 mg	30 comprimidos	Tomar 1 comprimido pela manhã. Ajustar conforme peso e inchaço.
+icc-alta	ICFEr (modelo)	ORAL	Losartana 50 mg	30 comprimidos	Tomar meio comprimido (25 mg) de 12/12 horas.
+icc-alta	ICFEr (modelo)	ORAL	Carvedilol 3,125 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, com alimento.
+icc-alta	ICFEr (modelo)	ORAL	Espironolactona 25 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia.
+insuficiencia-venosa	Padrão	ORAL	Diosmina 450 mg + hesperidina 50 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas por 60 dias.
+insonia	Trazodona	ORAL	Trazodona 50 mg	30 comprimidos	Tomar 1 comprimido 30 minutos antes de dormir por até 30 dias.
+intertrigo	Padrão	TÓPICA	Miconazol creme 2%	1 bisnaga	Aplicar nas dobras 2 vezes ao dia por 14 dias.
+intolerancia-lactose	Padrão	ORAL	Lactase 10.000 FCC	1 caixa	Tomar 1 cápsula imediatamente antes de consumir alimentos com lactose.
+ressaca	Padrão	ORAL	Ondansetrona 4 mg	6 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea.
+ressaca	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor de cabeça (evite paracetamol).
+ressaca	Padrão	ORAL	Tiamina (vitamina B1) 300 mg	10 comprimidos	Tomar 1 comprimido 1 vez ao dia por 10 dias.
+intox-alimentar	Padrão	ORAL	Sais para reidratação oral	5 envelopes	Diluir 1 envelope em 1 litro de água filtrada e beber aos poucos ao longo do dia.
+intox-alimentar	Padrão	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea ou vômito.
+intox-alimentar	Padrão	ORAL	Escopolamina 10 mg + dipirona 250 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+itu-recorrente	Contínua	ORAL	Nitrofurantoína 100 mg	30 cápsulas	Tomar 1 cápsula à noite, ao deitar, por 6 meses.
+laringite	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+laringite	Padrão	INALATÓRIA	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco 250 mL	Fazer nebulização com 5 mL, 3 vezes ao dia, por 5 dias.
+laringite-refluxo	Padrão	ORAL	Omeprazol 20 mg	112 cápsulas	Tomar 1 cápsula 30 minutos antes do café e 1 antes do jantar por 8 semanas.
+larva-migrans	Albendazol	ORAL	Albendazol 400 mg	3 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 dias.
+larva-migrans	Ivermectina	ORAL	Ivermectina 6 mg	2 comprimidos	Tomar 200 mcg/kg em dose única (60 kg = 2 comprimidos).
+leptospirose	Amoxicilina	ORAL	Amoxicilina 500 mg	21 cápsulas	Tomar 1 cápsula de 8/8 horas por 7 dias.
+leptospirose	Amoxicilina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+leptospirose	Doxiciclina	ORAL	Doxiciclina 100 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+leptospirose	Doxiciclina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+linfadenite	Padrão	ORAL	Cefalexina 500 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+linfadenite	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+linfogranuloma	Padrão	ORAL	Doxiciclina 100 mg	42 comprimidos	Tomar 1 comprimido de 12/12 horas por 21 dias.
+lombalgia	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+lombalgia	Padrão	ORAL	Ciclobenzaprina 5 mg	7 comprimidos	Tomar 1 comprimido à noite por 7 dias. Pode causar sonolência.
+lombalgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+lombalgia-gestacao	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor (máximo 4 por dia).
+lombociatalgia	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+lombociatalgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+lombociatalgia	Padrão	ORAL	Ciclobenzaprina 5 mg	7 comprimidos	Tomar 1 comprimido à noite por 7 dias. Pode causar sonolência.
+luxacao-ombro	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+luxacao-ombro	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+mastalgia	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+mastalgia	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar na mama dolorida 3 vezes ao dia nos dias de dor.
+mastite	Padrão	ORAL	Cefalexina 500 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+mastite	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+mastite	Padrão	ORAL	Ibuprofeno 400 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+mialgia	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+mialgia	Padrão	ORAL	Ciclobenzaprina 5 mg	5 comprimidos	Tomar 1 comprimido à noite por 5 dias. Pode causar sonolência.
+mialgia	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no local 3 vezes ao dia por 7 dias.
+micose	Padrão	TÓPICA	Miconazol creme 2%	1 bisnaga	Aplicar nas lesões 2 vezes ao dia por 3 semanas, mantendo 1 semana após o desaparecimento.
+miliaria	Padrão	TÓPICA	Calamina loção	1 frasco	Aplicar nas lesões 3 vezes ao dia.
+mononucleose	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor ou febre.
+mononucleose	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+mordedura	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	10 comprimidos	Tomar 1 comprimido de 12/12 horas por 5 dias.
+mordedura	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+mpox	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+mpox	Padrão	ORAL	Hidroxizina 25 mg	10 comprimidos	Tomar 1 comprimido à noite se coceira.
+nevralgia-trigemio	Padrão	ORAL	Carbamazepina 200 mg	60 comprimidos	Tomar meio comprimido de 12/12 horas; aumentar meio comprimido a cada 3 dias até controle da dor (habitual 200 mg de 12/12 horas).
+nevralgia-pos-herpetica	Amitriptilina	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido à noite por 1 semana; depois, 1 comprimido à noite.
+nevralgia-pos-herpetica	Gabapentina	ORAL	Gabapentina 300 mg	90 cápsulas	Tomar 1 cápsula à noite por 3 dias; depois, 1 de 12/12 horas por 3 dias; depois, 1 de 8/8 horas.
+neurite-vestibular	Padrão	ORAL	Dimenidrinato 50 mg + piridoxina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas por até 3 dias.
+neurite-vestibular	Padrão	ORAL	Prednisona 20 mg	20 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 5 dias; depois, reduzir 1 comprimido por dia.
+neurite-vestibular	Padrão	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se vômitos.
+neuropatia-diabetica	Amitriptilina	ORAL	Amitriptilina 25 mg	30 comprimidos	Tomar meio comprimido (12,5 mg) à noite por 1 semana; depois, 1 comprimido à noite.
+neuropatia-diabetica	Gabapentina	ORAL	Gabapentina 300 mg	90 cápsulas	Tomar 1 cápsula à noite; aumentar para 1 cápsula de 12/12 horas e depois de 8/8 horas, conforme tolerância.
+vomitos	Metoclopramida	ORAL	Metoclopramida 10 mg	10 comprimidos	Tomar 1 comprimido de 8/8 horas, 30 minutos antes das refeições, se náusea.
+vomitos	Ondansetrona	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea ou vômito.
+nausea-gestacao	Padrão	ORAL	Dimenidrinato 50 mg + piridoxina 10 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se náusea.
+nausea-gestacao	Padrão	ORAL	Metoclopramida 10 mg	10 comprimidos	Tomar 1 comprimido de 8/8 horas se vômitos.
+olho-seco	Padrão	OFTÁLMICA	Lágrima artificial sem conservante (carmelose 0,5%)	1 frasco	Pingar 1 gota em cada olho 4 a 6 vezes ao dia, uso contínuo.
+onicomicose	Oral	ORAL	Terbinafina 250 mg	84 comprimidos	Tomar 1 comprimido 1 vez ao dia por 12 semanas (unhas dos pés) ou 6 semanas (mãos).
+onicomicose	Tópico (leve)	TÓPICA	Ciclopirox 8% esmalte	1 frasco	Aplicar na unha afetada 1 vez ao dia por 6 a 12 meses.
+epididimite	Padrão (< 35 anos / IST)	INTRAMUSCULAR	Ceftriaxona 500 mg	1 frasco-ampola	Aplicar 1 ampola via intramuscular, dose única.
+epididimite	Padrão (< 35 anos / IST)	ORAL	Doxiciclina 100 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+epididimite	Padrão (< 35 anos / IST)	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+epididimite-enterica	Padrão	ORAL	Levofloxacino 500 mg	10 comprimidos	Tomar 1 comprimido 1 vez ao dia por 10 dias.
+epididimite-enterica	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+osteoporose	Padrão	ORAL	Alendronato de sódio 70 mg	4 comprimidos	Tomar 1 comprimido 1 vez por semana, em jejum, com 1 copo cheio de água. Permanecer em pé ou sentado e sem comer por 30 minutos.
+osteoporose	Padrão	ORAL	Carbonato de cálcio 1.250 mg + colecalciferol 400 UI	60 comprimidos	Tomar 1 comprimido após o almoço e 1 após o jantar (se a dieta tiver pouco cálcio).
+otite-externa	Padrão	OTOLÓGICA	Ciprofloxacino + hidrocortisona solução otológica	1 frasco	Pingar 3 gotas no ouvido afetado de 12/12 horas por 7 dias.
+otite-externa	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+otite-media	Padrão	ORAL	Amoxicilina 500 mg	21 cápsulas	Tomar 1 cápsula de 8/8 horas por 7 dias.
+otite-media	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+otite-serosa	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Lavar as narinas 3 vezes ao dia.
+otite-serosa	Padrão	NASAL	Budesonida spray nasal 64 mcg	1 frasco	Aplicar 2 jatos em cada narina 1 vez ao dia por 30 dias (se rinite associada).
+otomicose	Padrão	OTOLÓGICA	Clotrimazol 1% solução	1 frasco	Pingar 4 gotas no ouvido afetado de 12/12 horas por 14 dias.
+oxiuriase	Padrão	ORAL	Albendazol 400 mg	2 comprimidos	Tomar 1 comprimido em dose única e repetir após 14 dias.
+paralisia-facial	Corticoide	ORAL	Prednisona 20 mg	20 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 5 dias; depois, reduzir 1 comprimido por dia até suspender.
+paralisia-facial	Corticoide	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado de 2/2 horas durante o dia.
+paralisia-facial	Corticoide	OFTÁLMICA	Gel lubrificante oftálmico (carbômero)	1 bisnaga	Aplicar no olho afetado à noite e ocluir o olho com fita para dormir.
+paralisia-facial	Grave (+ antiviral)	ORAL	Prednisona 20 mg	20 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 5 dias; depois, reduzir 1 comprimido por dia até suspender.
+paralisia-facial	Grave (+ antiviral)	ORAL	Valaciclovir 500 mg	42 comprimidos	Tomar 2 comprimidos (1 g) de 8/8 horas por 7 dias.
+paralisia-facial	Grave (+ antiviral)	OFTÁLMICA	Lágrima artificial (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado de 2/2 horas durante o dia.
+verminose	Padrão	ORAL	Albendazol 400 mg	2 comprimidos	Tomar 1 comprimido em dose única. Repetir após 14 dias.
+paroniquia	Com celulite	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+paroniquia	Com celulite	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+paroniquia	Leve	TÓPICA	Mupirocina 2% pomada	1 bisnaga	Aplicar ao redor da unha 3 vezes ao dia por 7 dias.
+pediculose	Ivermectina	ORAL	Ivermectina 6 mg	4 comprimidos	Tomar 200 mcg/kg em dose única (60 kg = 2 comprimidos). Repetir após 7 dias.
+pediculose	Permetrina	TÓPICA	Permetrina 1% loção capilar	1 frasco	Aplicar no cabelo seco, deixar agir 10 minutos e enxaguar. Repetir após 7 dias.
+surdez-subita	Padrão	ORAL	Prednisona 20 mg	40 comprimidos	Tomar 3 comprimidos (60 mg) pela manhã por 7 dias; depois, reduzir conforme orientação do otorrino.
+surdez-subita	Padrão	ORAL	Omeprazol 20 mg	14 cápsulas	Tomar 1 cápsula em jejum enquanto usar o corticoide.
+perfuracao-timpanica	Contaminada	OTOLÓGICA	Ciprofloxacino 0,3% solução otológica	1 frasco	Pingar 4 gotas no ouvido afetado de 12/12 horas por 7 dias.
+perfuracao-timpanica	Contaminada	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+perfuracao-timpanica	Limpa	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+pericardite	Padrão	ORAL	Ibuprofeno 600 mg	42 comprimidos	Tomar 1 comprimido de 8/8 horas por 14 dias, após as refeições.
+pericardite	Padrão	ORAL	Colchicina 0,5 mg	180 comprimidos	Tomar 1 comprimido de 12/12 horas por 3 meses (se peso < 70 kg: 1 vez ao dia).
+pericardite	Padrão	ORAL	Omeprazol 20 mg	14 cápsulas	Tomar 1 cápsula em jejum enquanto usar o ibuprofeno.
+pericoronarite	Padrão	ORAL	Amoxicilina 500 mg	21 cápsulas	Tomar 1 cápsula de 8/8 horas por 7 dias.
+pericoronarite	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+pericoronarite	Padrão	ORAL	Digluconato de clorexidina 0,12% solução	1 frasco	Bochechar 15 mL por 1 minuto, 2 vezes ao dia. Não engolir.
+aranha	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+escorpiao	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+picada	Padrão	TÓPICA	Dexametasona creme 0,1%	1 bisnaga	Aplicar no local 2 vezes ao dia por 5 dias.
+picada	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 5 dias.
+pielonefrite	Padrão	ORAL	Ciprofloxacino 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+pielonefrite	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+pielonefrite	Padrão	ORAL	Ondansetrona 8 mg	10 comprimidos	Dissolver 1 comprimido na boca de 8/8 horas se náusea.
+pirose-gestacao	Padrão	ORAL	Hidróxido de alumínio + hidróxido de magnésio	1 frasco	Tomar 10 mL até 4 vezes ao dia, 1 hora após as refeições e ao deitar, se azia.
+pirose-gestacao	Padrão	ORAL	Omeprazol 20 mg	28 cápsulas	Se não melhorar com o antiácido: tomar 1 cápsula em jejum, 30 minutos antes do café, por 4 semanas.
+pitiriase-rosea	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia se coceira.
+pitiriase-rosea	Padrão	TÓPICA	Hidratante sem perfume	1 frasco	Aplicar no corpo 2 vezes ao dia.
+pitiriase	Extenso (oral)	ORAL	Fluconazol 150 mg	4 cápsulas	Tomar 2 cápsulas (300 mg) 1 vez por semana por 2 semanas.
+pitiriase	Tópico	TÓPICA	Cetoconazol xampu 2%	1 frasco	Aplicar nas áreas afetadas durante o banho, deixar agir 5 minutos e enxaguar, 1 vez ao dia por 5 dias.
+pneumonia	Com comorbidades	ORAL	Amoxicilina + clavulanato 875/125 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+pneumonia	Com comorbidades	ORAL	Azitromicina 500 mg	3 comprimidos	Tomar 1 comprimido 1 vez ao dia por 3 dias.
+pneumonia	Com comorbidades	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+pneumonia	Sem comorbidades	ORAL	Amoxicilina 500 mg	21 cápsulas	Tomar 1 cápsula de 8/8 horas por 7 dias.
+pneumonia	Sem comorbidades	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+polineuropatia-alcoolica	Padrão	ORAL	Tiamina (vitamina B1) 300 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo.
+polineuropatia-alcoolica	Padrão	ORAL	Ácido fólico 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia por 30 dias.
+pos-avc	Padrão	ORAL	Ácido acetilsalicílico 100 mg	30 comprimidos	Tomar 1 comprimido após o almoço, uso contínuo.
+pos-avc	Padrão	ORAL	Atorvastatina 40 mg	30 comprimidos	Tomar 1 comprimido à noite, uso contínuo.
+profilaxia-endocardite	Alérgico à penicilina	ORAL	Azitromicina 500 mg	1 comprimido	Tomar 1 comprimido 30 a 60 minutos antes do procedimento.
+profilaxia-endocardite	Amoxicilina	ORAL	Amoxicilina 500 mg	4 cápsulas	Tomar 4 cápsulas (2 g) juntas, 30 a 60 minutos antes do procedimento.
+pep-hiv	Esquema preferencial	ORAL	Tenofovir 300 mg + lamivudina 300 mg	28 comprimidos	Tomar 1 comprimido 1 vez ao dia por 28 dias.
+pep-hiv	Esquema preferencial	ORAL	Dolutegravir 50 mg	28 comprimidos	Tomar 1 comprimido 1 vez ao dia por 28 dias.
+prostatite	Padrão	ORAL	Ciprofloxacino 500 mg	56 comprimidos	Tomar 1 comprimido de 12/12 horas por 4 semanas.
+prostatite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+prostatite	Padrão	ORAL	Tansulosina 0,4 mg	30 cápsulas	Tomar 1 cápsula à noite.
+prurido-anal	Padrão	TÓPICA	Hidrocortisona creme 1%	1 bisnaga	Aplicar fina camada na região anal 2 vezes ao dia por até 7 dias.
+prurido-anal	Padrão	TÓPICA	Óxido de zinco pomada	1 bisnaga	Aplicar após a higiene como barreira protetora.
+psoriase	Padrão	TÓPICA	Clobetasol 0,05% creme	1 bisnaga	Aplicar nas placas 2 vezes ao dia por até 2 semanas. Não usar no rosto, dobras e genitais.
+psoriase	Padrão	TÓPICA	Hidratante com ureia 10%	1 frasco	Aplicar no corpo 2 vezes ao dia.
+pe-diabetico	Amoxicilina + clavulanato	ORAL	Amoxicilina + clavulanato 875/125 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+pe-diabetico	Cefalexina	ORAL	Cefalexina 500 mg	40 cápsulas	Tomar 1 cápsula de 6/6 horas por 10 dias.
+queilite-angular	Padrão	TÓPICA	Miconazol creme 2%	1 bisnaga	Aplicar nos cantos da boca 2 vezes ao dia por 14 dias.
+queimadura	Padrão	TÓPICA	Sulfadiazina de prata 1% creme	1 bisnaga	Aplicar uma camada fina sobre a queimadura 1 vez ao dia, na troca do curativo.
+queimadura	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+agua-viva	Padrão	TÓPICA	Dexametasona creme 0,1%	1 bisnaga	Aplicar no local 2 vezes ao dia por 5 dias.
+agua-viva	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+agua-viva	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia se coceira.
+queimadura-quimica-ocular	Padrão	OFTÁLMICA	Tobramicina colírio 0,3%	1 frasco	Pingar 1 gota no olho afetado de 6/6 horas por 7 dias.
+queimadura-quimica-ocular	Padrão	OFTÁLMICA	Lágrima artificial sem conservante (carmelose 0,5%)	1 frasco	Pingar 1 gota no olho afetado de 2/2 horas.
+queimadura-quimica-ocular	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+queimadura-solar	Padrão	ORAL	Ibuprofeno 400 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+queimadura-solar	Padrão	TÓPICA	Hidratante com aloe vera (loção)	1 frasco	Aplicar na pele afetada 3 a 4 vezes ao dia.
+profilaxia-meningo	Ciprofloxacino	ORAL	Ciprofloxacino 500 mg	1 comprimido	Tomar 1 comprimido em dose única.
+profilaxia-meningo	Rifampicina	ORAL	Rifampicina 300 mg	8 cápsulas	Tomar 2 cápsulas (600 mg) de 12/12 horas por 2 dias.
+reacao-estresse	Padrão	ORAL	Hidroxizina 25 mg	14 comprimidos	Tomar 1 comprimido à noite ou até de 12/12 horas se ansiedade, por até 7 dias. Pode causar sonolência.
+reacao-vacina	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+reacao-vacina	Padrão	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre, se não puder usar paracetamol.
+resfriado	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor ou febre.
+resfriado	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 4 a 6 vezes ao dia.
+retencao-sonda	Padrão	ORAL	Tansulosina 0,4 mg	30 cápsulas	Tomar 1 cápsula à noite, uso contínuo.
+rinite	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 10 dias.
+rinite	Padrão	NASAL	Budesonida spray nasal 64 mcg	1 frasco	Aplicar 2 jatos em cada narina 1 vez ao dia por 30 dias.
+rinite	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 3 vezes ao dia.
+rinite-medicamentosa	Padrão	NASAL	Budesonida spray nasal 64 mcg	1 frasco	Aplicar 2 jatos em cada narina de 12/12 horas por 4 semanas.
+rinite-medicamentosa	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 4 a 6 vezes ao dia.
+sinusite	Alérgico à penicilina	ORAL	Doxiciclina 100 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+sinusite	Alérgico à penicilina	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Lavar as narinas com 10 mL em cada lado 4 vezes ao dia.
+sinusite	Amoxicilina	ORAL	Amoxicilina 875 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+sinusite	Amoxicilina	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Lavar as narinas com 10 mL em cada lado 4 vezes ao dia.
+sinusite	Amoxicilina	NASAL	Budesonida spray nasal 64 mcg	1 frasco	Aplicar 2 jatos em cada narina 1 vez ao dia por 14 dias.
+sinusite	Amoxicilina	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+rinossinusite-cronica	Padrão	NASAL	Cloreto de sódio 0,9% (soro fisiológico) — lavagem de alto volume	1 frasco 500 mL	Lavar cada narina com 120 a 240 mL (seringa ou frasco de lavagem) 2 vezes ao dia.
+rinossinusite-cronica	Padrão	NASAL	Budesonida spray nasal 64 mcg	1 frasco	Aplicar 2 jatos em cada narina de 12/12 horas, uso contínuo.
+rosacea	Padrão	TÓPICA	Metronidazol gel 0,75%	1 bisnaga	Aplicar fina camada nas áreas afetadas 2 vezes ao dia por 8 a 12 semanas.
+sua	Progestagênio	ORAL	Acetato de medroxiprogesterona 10 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias.
+sua	Ácido tranexâmico	ORAL	Ácido tranexâmico 250 mg	60 comprimidos	Tomar 4 comprimidos (1 g) de 8/8 horas por até 5 dias.
+sua	Ácido tranexâmico	ORAL	Ácido mefenâmico 500 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+sarampo	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se febre ou dor.
+sarampo	Padrão	ORAL	Palmitato de retinol (vitamina A) 200.000 UI	2 cápsulas	Tomar 1 cápsula no dia do diagnóstico e 1 no dia seguinte.
+sialoadenite	Padrão	ORAL	Amoxicilina + clavulanato 875/125 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+sialoadenite	Padrão	ORAL	Ibuprofeno 600 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias, após as refeições.
+soluco	Metoclopramida	ORAL	Metoclopramida 10 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por 3 dias.
+soluco	Refratário	ORAL	Clorpromazina 25 mg	9 comprimidos	Tomar 1 comprimido de 8/8 horas por até 3 dias. Pode causar sonolência e tontura.
+suplementacao-prenatal	Padrão	ORAL	Ácido fólico 0,4 mg	90 comprimidos	Tomar 1 comprimido 1 vez ao dia até a 12ª semana de gestação (idealmente desde 30 dias antes de engravidar).
+suplementacao-prenatal	Padrão	ORAL	Sulfato ferroso 40 mg de ferro elementar	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, 30 minutos antes do almoço, até o 3º mês após o parto.
+sifilis	Alérgico (não gestante)	ORAL	Doxiciclina 100 mg	30 comprimidos	Tomar 1 comprimido de 12/12 horas por 15 dias (recente). Na tardia, por 30 dias.
+sifilis	Recente (< 1 ano)	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	2 frascos-ampola	Aplicar 2.400.000 UI via intramuscular em dose única (1.200.000 UI em cada glúteo).
+sifilis	Tardia / duração ignorada	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	6 frascos-ampola	Aplicar 2.400.000 UI via intramuscular (1.200.000 UI em cada glúteo) 1 vez por semana por 3 semanas.
+patelofemoral	Padrão	ORAL	Ibuprofeno 400 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+pernas-inquietas	Padrão	ORAL	Pramipexol 0,125 mg	30 comprimidos	Tomar 1 comprimido 2 a 3 horas antes de deitar, uso contínuo.
+abstinencia-alcool	Padrão	ORAL	Diazepam 10 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 2 dias, depois de 12/12 horas por 2 dias, depois 1 à noite por 2 dias e suspender.
+abstinencia-alcool	Padrão	ORAL	Tiamina (vitamina B1) 300 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia.
+sii	Padrão	ORAL	Trimebutina 200 mg	30 cápsulas	Tomar 1 cápsula de 8/8 horas por 10 dias.
+sii	Padrão	ORAL	Escopolamina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se cólica.
+tunel-carpo	Padrão	ORAL	Naproxeno 500 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias, após as refeições.
+tunel-carpo	Padrão	ÓRTESE	Órtese (tala) de punho em posição neutra	1 unidade	Usar à noite para dormir por 6 semanas.
+sindrome-geniturinaria	Padrão	VAGINAL	Estriol creme vaginal 1 mg/g	1 bisnaga	Aplicar 1 aplicador à noite por 21 dias. Depois, 2 vezes por semana.
+gripe	Grupo de risco (oseltamivir)	ORAL	Oseltamivir 75 mg	10 cápsulas	Tomar 1 cápsula de 12/12 horas por 5 dias.
+gripe	Grupo de risco (oseltamivir)	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+gripe	Grupo de risco (oseltamivir)	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 4 vezes ao dia.
+gripe	Sintomáticos	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+gripe	Sintomáticos	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 5 dias.
+gripe	Sintomáticos	NASAL	Cloreto de sódio 0,9% (soro fisiológico)	1 frasco	Aplicar 3 jatos em cada narina 4 vezes ao dia.
+tabagismo	> 20 cigarros/dia	TRANSDÉRMICA	Nicotina adesivo 21 mg/24h	28 adesivos	Aplicar 1 adesivo por dia na pele sem pelos, trocando o local, por 4 semanas.
+tabagismo	> 20 cigarros/dia	TRANSDÉRMICA	Nicotina adesivo 14 mg/24h	28 adesivos	Depois, 1 adesivo por dia por 4 semanas.
+tabagismo	> 20 cigarros/dia	TRANSDÉRMICA	Nicotina adesivo 7 mg/24h	28 adesivos	Depois, 1 adesivo por dia por 4 semanas.
+tabagismo	> 20 cigarros/dia	ORAL	Nicotina goma de mascar 2 mg	1 caixa	Mascar 1 goma se fissura, até 9 por dia.
+tce-leve	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+tce-leve	Padrão	ORAL	Dipirona 1 g	1 caixa	Tomar 1 comprimido de 6/6 horas se dor, alternando com o paracetamol se necessário.
+tendinite	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+tendinite	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no local 3 vezes ao dia por 10 dias.
+tendinite-aquiles	Padrão	ORAL	Naproxeno 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias, após as refeições.
+tendinite-aquiles	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no tendão 3 vezes ao dia.
+de-quervain	Padrão	ORAL	Naproxeno 500 mg	20 comprimidos	Tomar 1 comprimido de 12/12 horas por 10 dias, após as refeições.
+de-quervain	Padrão	TÓPICA	Diclofenaco dietilamônio gel 11,6 mg/g	1 bisnaga	Aplicar no punho 3 vezes ao dia por 10 dias.
+teniase	Padrão	ORAL	Praziquantel 600 mg	1 comprimido	Tomar 10 mg/kg em dose única (60 kg = 1 comprimido).
+tinea-cruris	Padrão	TÓPICA	Terbinafina creme 1%	1 bisnaga	Aplicar na área afetada 1 a 2 vezes ao dia por 2 semanas.
+tireoidite-subaguda	Leve	ORAL	Ibuprofeno 600 mg	42 comprimidos	Tomar 1 comprimido de 8/8 horas por 14 dias, após as refeições.
+tireoidite-subaguda	Leve	ORAL	Propranolol 40 mg	60 comprimidos	Tomar 1 comprimido de 8/8 horas se palpitação.
+tireoidite-subaguda	Moderada / grave	ORAL	Prednisona 20 mg	28 comprimidos	Tomar 2 comprimidos (40 mg) pela manhã por 7 dias, depois reduzir conforme orientação médica.
+tireoidite-subaguda	Moderada / grave	ORAL	Propranolol 40 mg	60 comprimidos	Tomar 1 comprimido de 8/8 horas se palpitação.
+hiperreatividade-pos-viral	Padrão	INALATÓRIA	Budesonida 200 mcg (aerossol) + espaçador	1 frasco	Aplicar 1 jato com espaçador de 12/12 horas por 4 semanas. Enxaguar a boca após o uso.
+hiperreatividade-pos-viral	Padrão	INALATÓRIA	Salbutamol spray 100 mcg/dose + espaçador	1 frasco	Aplicar 2 jatos com espaçador até de 6/6 horas se tosse ou chiado.
+tosse	Padrão	ORAL	Dropropizina xarope 3 mg/mL	1 frasco	Tomar 10 mL de 6/6 horas se tosse, por até 7 dias.
+tracoma	Padrão	ORAL	Azitromicina 500 mg	2 comprimidos	Tomar 2 comprimidos (1 g) em dose única.
+tag	Escitalopram	ORAL	Escitalopram 10 mg	30 comprimidos	Tomar meio comprimido pela manhã por 7 dias; depois, 1 comprimido pela manhã, uso contínuo.
+tdpm	Padrão	ORAL	Fluoxetina 20 mg	30 cápsulas	Tomar 1 cápsula pela manhã, uso contínuo (ou apenas na 2ª metade do ciclo, conforme orientação).
+tremor-essencial	Padrão	ORAL	Propranolol 40 mg	60 comprimidos	Tomar 1 comprimido de 12/12 horas, uso contínuo.
+tricomoniase	7 dias	ORAL	Metronidazol 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+tricomoniase	Dose única	ORAL	Metronidazol 500 mg	4 comprimidos	Tomar 4 comprimidos juntos (2 g), em dose única.
+tromboflebite	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+tromboflebite	Padrão	TÓPICA	Polissulfato de mucopolissacarídeo pomada	1 bisnaga	Aplicar sobre o local 3 vezes ao dia por 10 dias.
+trombose-hemorroidaria	Padrão	ORAL	Ibuprofeno 600 mg	15 comprimidos	Tomar 1 comprimido de 8/8 horas por 5 dias, após as refeições.
+trombose-hemorroidaria	Padrão	TÓPICA	Lidocaína gel 2%	1 bisnaga	Aplicar no local até 4 vezes ao dia se dor.
+trombose-hemorroidaria	Padrão	ORAL	Psyllium 5,85 g (envelope)	30 envelopes	Diluir 1 envelope em 1 copo de água e tomar 1 vez ao dia.
+tvp	Rivaroxabana	ORAL	Rivaroxabana 15 mg	42 comprimidos	Tomar 1 comprimido de 12/12 horas, junto com as refeições, por 21 dias.
+tvp	Rivaroxabana	ORAL	Rivaroxabana 20 mg	30 comprimidos	Depois, tomar 1 comprimido 1 vez ao dia, com o jantar, por no mínimo 3 meses.
+tvp	Rivaroxabana	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se dor.
+tuberculose	50 a 70 kg	ORAL	Rifampicina 150 mg + isoniazida 75 mg + pirazinamida 400 mg + etambutol 275 mg (RHZE)	4 comprimidos/dia	Tomar 4 comprimidos juntos, em jejum, 1 vez ao dia por 2 meses (fase intensiva).
+tuberculose	50 a 70 kg	ORAL	Rifampicina 150 mg + isoniazida 75 mg (RH)	4 comprimidos/dia	Depois, tomar 4 comprimidos juntos, em jejum, 1 vez ao dia por 4 meses (fase de manutenção).
+tungiase	Padrão	TÓPICA	Mupirocina 2% pomada	1 bisnaga	Aplicar no local após a retirada, 3 vezes ao dia por 5 dias.
+unha-encravada	Infectada	ORAL	Cefalexina 500 mg	28 cápsulas	Tomar 1 cápsula de 6/6 horas por 7 dias.
+unha-encravada	Infectada	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+unha-encravada	Sem infecção	ORAL	Dipirona 500 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor.
+uretrite	Padrão	INTRAMUSCULAR	Ceftriaxona 500 mg	1 frasco-ampola	Aplicar 1 ampola via intramuscular, dose única.
+uretrite	Padrão	ORAL	Azitromicina 500 mg	2 comprimidos	Tomar 2 comprimidos juntos, em dose única.
+urticaria	Intensa	ORAL	Desloratadina 5 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+urticaria	Intensa	ORAL	Prednisona 20 mg	10 comprimidos	Tomar 2 comprimidos pela manhã por 5 dias.
+urticaria	Leve	ORAL	Desloratadina 5 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias.
+urticaria-cronica	Padrão	ORAL	Desloratadina 5 mg	30 comprimidos	Tomar 1 comprimido 1 vez ao dia, uso contínuo. Se não controlar em 2 a 4 semanas, a dose pode ser aumentada até 4 comprimidos/dia, conforme orientação.
+vaginose	Padrão	ORAL	Metronidazol 500 mg	14 comprimidos	Tomar 1 comprimido de 12/12 horas por 7 dias.
+vaginose-gestante	Padrão	ORAL	Metronidazol 250 mg	21 comprimidos	Tomar 1 comprimido de 8/8 horas por 7 dias.
+varicela	Padrão	ORAL	Aciclovir 400 mg	70 comprimidos	Tomar 2 comprimidos (800 mg) 5 vezes ao dia por 7 dias.
+varicela	Padrão	ORAL	Hidroxizina 25 mg	10 comprimidos	Tomar 1 comprimido à noite se coceira. Pode causar sonolência.
+varicela	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se febre ou dor.
+verruga	Padrão	TÓPICA	Ácido salicílico 16,7% + ácido lático 16,7% (colódio)	1 frasco	Aplicar sobre a verruga 1 vez ao dia, protegendo a pele ao redor, por até 12 semanas. Lixar a camada branca antes de cada aplicação.
+vertigem	Betaistina	ORAL	Betaistina 24 mg	30 comprimidos	Tomar 1 comprimido de 12/12 horas por 15 dias.
+vertigem	Dimenidrinato	ORAL	Dimenidrinato 50 mg + piridoxina 10 mg	1 caixa	Tomar 1 comprimido de 8/8 horas se tontura, por até 5 dias. Pode causar sonolência.
+vulvite	Padrão	TÓPICA	Hidrocortisona creme 1%	1 bisnaga	Aplicar fina camada na vulva 2 vezes ao dia por 7 dias.
+xerose	Padrão	TÓPICA	Hidratante com ureia 10%	1 frasco	Aplicar no corpo todo 2 vezes ao dia, logo após o banho.
+xerose	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia por 7 dias se coceira.
+zika	Padrão	ORAL	Paracetamol 750 mg	1 caixa	Tomar 1 comprimido de 6/6 horas se dor ou febre.
+zika	Padrão	ORAL	Loratadina 10 mg	1 caixa	Tomar 1 comprimido 1 vez ao dia se coceira.
+ulcera-genital-sindromica	Padrão	INTRAMUSCULAR	Penicilina G benzatina 1.200.000 UI	2 frascos-ampola	Aplicar 2.400.000 UI via intramuscular em dose única (1.200.000 UI em cada glúteo).
+ulcera-genital-sindromica	Padrão	ORAL	Azitromicina 500 mg	2 comprimidos	Tomar 2 comprimidos juntos, em dose única.
+ulcera-peptica	Padrão	ORAL	Omeprazol 40 mg	56 cápsulas	Tomar 1 cápsula em jejum, 30 minutos antes do café, por 8 semanas.
