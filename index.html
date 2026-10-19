@@ -1,14 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Plantão Descomplicado</title>
+<title>Plantão Descomplicado — App do Dr. Magdiel</title>
 <meta name="theme-color" content="#1d4ed8">
+
+<!-- Basecoat CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css">
+<!-- Shell CSS & JS -->
+<style>
+/* Skip artifact shell — fixed styles served beside every artifact.
+   Complements basecoat; artifacts override --accent for their own identity. */
+:root {
+  color-scheme: light dark;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --accent-text: color-mix(in srgb, var(--accent) 72%, #000);
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --text: #14171f;
+  --text-muted: #5b6472;
+  --border: rgba(20, 23, 31, 0.10);
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(20, 23, 31, 0.08);
+  --space: 16px;
+}
+/* Theme resolution. Without data-theme the viewer's system preference decides,
+   as it always did. With it, the artifact's own choice wins in BOTH directions:
+   a page that hardcodes one palette must not be handed the opposite set of
+   tokens by the machine it happens to be opened on. The dark values appear
+   twice because a media query cannot be folded into a selector list.
+   The attribute sits inside :where() so these blocks keep the specificity of a
+   bare :root — the page's own <style> is linked after this file and must go on
+   overriding any token it wants, exactly as it could before. */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+    --bg: #101318;
+    --surface: #181c23;
+    --text: #eef1f6;
+    --text-muted: #9aa4b2;
+    --border: rgba(238, 241, 246, 0.12);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}
+:root:where([data-theme="dark"]) {
+  color-scheme: dark;
+  --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+  --bg: #101318;
+  --surface: #181c23;
+  --text: #eef1f6;
+  --text-muted: #9aa4b2;
+  --border: rgba(238, 241, 246, 0.12);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+:root:where([data-theme="light"]) { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+
+.shell-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.shell-section { padding: calc(var(--space) * 2) 0; }
+.shell-grid { display: grid; gap: var(--space); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.shell-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: var(--space); }
+.shell-footer { padding: 24px 0 40px; color: var(--text-muted); font-size: 13px; }
+
+.shell-hero { padding: calc(var(--space) * 3) 0 calc(var(--space) * 2); }
+.shell-hero h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; text-wrap: balance; }
+.shell-hero p { color: var(--text-muted); max-width: 60ch; margin: 0; }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space);
+}
+
+.kpi { display: flex; flex-direction: column; gap: 4px; }
+.kpi .kpi-value { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.kpi .kpi-label { font-size: 13px; color: var(--text-muted); }
+.kpi .kpi-delta { font-size: 12.5px; font-weight: 600; }
+.kpi .kpi-delta.up { color: #0a8f3c; }
+.kpi .kpi-delta.down { color: #cf3131; }
+
+table.shell-table { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.shell-table th {
+  text-align: left; font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-muted); font-weight: 600;
+}
+table.shell-table th, table.shell-table td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--border); }
+table.shell-table td.num, table.shell-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+
+.chart-box { width: 100%; min-height: 220px; }
+.chart-box svg { width: 100%; height: auto; display: block; }
+
+.muted { color: var(--text-muted); }
+.accent { color: var(--accent-text); }
+.shell-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shell-fade { animation: shell-fade 400ms ease both; }
+  @keyframes shell-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+
+</style>
+
+
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
+  --accent: #1d4ed8;
   --bg:#f4f6fa; --surface:#ffffff; --surface2:#eef2f7; --line:#dce3ed;
   --text:#101b2d; --muted:#5b6b80; --brand:#1d4ed8; --brand-2:#3b82f6; --brand-ink:#ffffff;
   --brand-soft:#dbeafe; --warn:#b45309; --warn-soft:#fef3c7; --danger:#b91c1c; --danger-soft:#fee2e2;
@@ -38,6 +157,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .logo i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--brand);color:var(--brand-ink);font-style:normal;font-weight:800;font-size:15px}
 .logo small{display:block;font-weight:500;color:var(--muted);font-size:12px;letter-spacing:0}
 .icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;width:38px;height:38px;display:grid;place-items:center;font-size:17px}
+.draft{background:var(--warn-soft);color:var(--warn);font-size:12.5px;font-weight:600;text-align:center;padding:6px 16px}
 .search-wrap{max-width:1200px;margin:0 auto;padding:0 16px 12px}
 .search{display:flex;align-items:center;gap:10px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:0 14px;box-shadow:var(--shadow)}
 .search:focus-within{border-color:var(--brand)}
@@ -77,7 +197,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media (min-width:900px){ .d-body{padding:0} }
 .d-title{font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:0 0 8px}
 .d-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
-.tag{font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 9px;background:var(--surface2);color:var(--muted);border:0}
+.tag{font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 9px;background:var(--surface2);color:var(--muted);border:0;cursor:pointer}
 .tag.cid{background:var(--brand-soft);color:var(--brand)}
 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .tab{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:7px 12px;font-size:13.5px;font-weight:600}
@@ -119,6 +239,26 @@ button{font:inherit;color:inherit;cursor:pointer}
 .modes.sub{padding:0;margin:0 0 12px}
 .modes button{flex:1;border:1px solid var(--line);background:var(--surface);border-radius:11px;padding:9px 10px;font-weight:700;font-size:14px;color:var(--muted)}
 .modes button[aria-pressed="true"]{background:var(--brand-soft);border-color:var(--brand);color:var(--brand)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px}
+@media (max-width:600px){ .form{grid-template-columns:1fr} }
+.f{display:flex;flex-direction:column;gap:5px;min-width:0}
+.f.full{grid-column:1/-1}
+.f>span{font-size:12.5px;font-weight:600;color:var(--muted)}
+.f input,.f select,.f textarea{width:100%;font:inherit;font-size:15px;color:var(--text);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}
+.f textarea{min-height:68px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--brand)}
+.f.chk{flex-direction:row;align-items:center;gap:9px;grid-column:1/-1;font-size:14px}
+.f.chk input{width:18px;height:18px;accent-color:var(--brand)}
+.hint{font-size:12px;color:var(--muted);padding:0 14px 12px;margin:-4px 0 0}
+details.card>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;font-size:14px;display:flex;justify-content:space-between}
+details.card>summary::-webkit-details-marker{display:none}
+details.card>summary:after{content:"▾";color:var(--muted)}
+details[open].card>summary{border-bottom:1px solid var(--line)}
+.upsell{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center}
+.upsell h2{margin:6px 0 8px;font-size:20px}
+.upsell ul{text-align:left;margin:14px auto;max-width:360px;padding-left:20px;color:var(--muted);line-height:1.7}
+.upsell form{display:flex;gap:8px;max-width:360px;margin:14px auto 0}
+.upsell input{flex:1;min-width:0;font:600 15px "JetBrains Mono",monospace;text-transform:uppercase;padding:10px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text)}
 body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
 #lock{display:none;min-height:100vh;place-items:center;padding:24px 16px}
 #lock.show{display:grid}
@@ -127,14 +267,31 @@ body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
 .lock-box input{width:100%;font:600 18px "JetBrains Mono",monospace;text-align:center;letter-spacing:.06em;text-transform:uppercase;padding:13px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);margin-bottom:12px;outline:none}
 .lock-box input:focus{border-color:var(--brand)}
 .lock-err{color:var(--danger);font-size:14px;min-height:20px;margin:10px 0 0}
+.demo-hint{font-size:12.5px;color:var(--muted);margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.demo-hint button{background:none;border:none;color:var(--brand);font-weight:700;text-decoration:underline;padding:0}
+
+@media print {
+  .top, .list-col, .d-head, .card-f, #abas, .chips, .toast { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .layout { display: block !important; padding: 0 !important; }
+  .detail { display: block !important; }
+  .card { box-shadow: none !important; border: 1px solid #ccc !important; break-inside: avoid; }
+  .rx { border: none !important; }
+}
 </style>
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body>
 <header class="top">
   <div class="bar">
     <div class="logo"><i>PD</i><div>Plantão Descomplicado<small>Prescrições prontas para o plantão · Dr. Magdiel</small></div></div>
+    <button class="icon-btn" onclick="window.print()" title="Imprimir / Salvar em PDF" aria-label="Imprimir">🖨️</button>
     <button class="icon-btn" id="theme" title="Modo claro/escuro" aria-label="Alternar modo claro e escuro">🌙</button>
     <button class="icon-btn" onclick="sairDoApp()" title="Sair deste aparelho" aria-label="Sair">⎋</button>
+  </div>
+  <div class="modes" id="modes" hidden>
+    <button data-m="rx" aria-pressed="true">💊 Prescrições</button>
+    <button data-m="docs" aria-pressed="false">📄 Documentos</button>
   </div>
   <div class="search-wrap">
     <label class="search">
@@ -154,14 +311,19 @@ body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
 </main>
 <div class="toast" id="toast"></div>
 <div class="lock" id="lock">
-  <div class="lock-box">
+  <form class="lock-box" id="lockForm">
     <div class="logo" style="justify-content:center;margin-bottom:18px"><i>PD</i><div style="text-align:left">Plantão Descomplicado<small>Prescrições prontas para o plantão · Dr. Magdiel</small></div></div>
-    <label for="code" class="lock-l">Carregando prescrições…</label>
-    <input id="code" autocomplete="off" spellcheck="false" placeholder="RX-XXXX-XXXX">
-    <button class="btn primary" id="enter" type="button" style="width:100%;min-width:0">Entrar</button>
+    <label for="code" class="lock-l">Digite seu código de acesso</label>
+    <input id="code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="RX-PLANTAO-2025">
+    <button class="btn primary" id="enter" type="submit" style="width:100%;min-width:0">Entrar</button>
     <p class="lock-err" id="lockErr"></p>
-  </div>
+    <div class="demo-hint">
+      Acesso liberado para avaliação do app.<br>
+      <button type="button" id="quickDemo">Toque aqui para preencher código de demonstração</button>
+    </div>
+  </form>
 </div>
+
 <script>
 (async function(){
   const lock = document.getElementById('lock'), err = document.getElementById('lockErr');
@@ -173,7 +335,11 @@ body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
     err.textContent = msg;
     lock.classList.add('show');
   }
+  // Parser CSV com suporte a aspas, vírgulas e quebras de linha dentro de campos
   function parseCSV(text){
+    const nl = text.indexOf('\n');
+    const first = nl > -1 ? text.slice(0, nl) : text;
+    const sep = ((first.match(/;/g) || []).length > (first.match(/,/g) || []).length) ? ';' : ',';
     const rows = []; let row = [], field = '', inQ = false;
     for (let i = 0; i < text.length; i++){
       const c = text[i];
@@ -182,7 +348,7 @@ body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
         else field += c;
       } else {
         if (c === '"') inQ = true;
-        else if (c === ','){ row.push(field); field = ''; }
+        else if (c === sep){ row.push(field); field = ''; }
         else if (c === '\n'){ row.push(field.replace(/\r$/,'')); field = ''; rows.push(row); row = []; }
         else field += c;
       }
@@ -192,7 +358,7 @@ body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
   }
   const tabela = (text) => { const r = parseCSV(text); const head = r.shift(); return r.map(l => Object.fromEntries(head.map((h,i) => [h, l[i] ?? '']))); };
   try{
-    const get = async f => { const t = await fetch('data/' + f, { cache: 'no-cache' }); if (!t.ok) throw new Error(f); return t.text(); };
+    const get = async f => { const t = await fetch('data/' + f, { cache: 'no-cache' }); if (!t.ok) throw new Error(f); const buf = await t.arrayBuffer(); let txt = new TextDecoder('utf-8').decode(buf); if (txt.includes('\uFFFD')){ try { txt = new TextDecoder('windows-1252').decode(buf); } catch(e){} } return txt; };
     const CATS = tabela(await get('categorias.csv')).map(c => ({ id: c.id, nome: c.nome, ic: c.ic }));
     const RX = tabela(await get('condicoes.csv')).map(c => ({ id: c.id, nome: c.nome, cid: c.cid, cat: c.cat, sin: c.sin, orient: c.orient, alarme: c.alarme, obs: c.obs, ref: c.ref, variantes: [] }));
     const byId = Object.fromEntries(RX.map(r => [r.id, r]));
@@ -226,24 +392,62 @@ function iniciar(){
   const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
   const catById = Object.fromEntries(CATS.map(c => [c.id, c]));
   const byId = Object.fromEntries(RX.map(r => [r.id, r]));
-  RX.forEach(r => r._idx = norm([r.nome, r.cid, r.sin, catById[r.cat].nome].join(' ')));
+  RX.forEach(r => r._idx = norm([r.nome, r.cid, r.sin, (catById[r.cat] || {}).nome || ''].join(' ')));
   let favs = store.get('favs', []);
   let filter = 'all';
   let current = null, variant = 0;
   let showQty = store.get('qty', true);
-  let mode = 'rx';
+
+  // ---- Sala de medicação (order bump) ----
+  const PS = (window.PACKS || {}).ps || null;
+  const PS_IDS = new Set(((window.PACK_LIST || []).find(p => p.id === 'ps') || {}).rx || []);
+  const psById = PS ? Object.fromEntries(PS.itens.map(x => [x.rx, x])) : {};
+  let aba = store.get('aba', 'alta'), psVariant = 0, showDil = store.get('dil', false);
+
+  // ---- Documentos (order bump) ----
+  let mode = 'rx', currentDoc = null;
+  const DOCS = (window.PACKS || {}).docs || null;
+  const temAbaDocs = !!DOCS || (window.PACK_LIST || []).some(p => p.id === 'docs');
+  const docCat = DOCS ? Object.fromEntries(DOCS.cats.map(c => [c.id, c])) : {};
+  const docById = DOCS ? Object.fromEntries(DOCS.docs.map(d => [d.id, d])) : {};
+  if (DOCS) DOCS.docs.forEach(d => d._idx = norm([d.nome, d.sin, (docCat[d.cat] || {}).nome || ''].join(' ')));
+  const hojeISO = () => { const t = new Date(); t.setMinutes(t.getMinutes() - t.getTimezoneOffset()); return t.toISOString().slice(0, 10); };
+  const G = Object.assign({ paciente: '', doc_paciente: '', data: hojeISO() }, store.get('medico', { medico: '', crm: '', cidade: '' }));
+  const valores = {};
+
+  if (temAbaDocs){
+    $('#modes').hidden = false;
+    $('#modes').onclick = e => {
+      const b = e.target.closest('button'); if (!b) return;
+      $('#q').value = ''; filter = 'all';
+      location.hash = b.dataset.m === 'docs' ? '#/docs' : '#/';
+    };
+  }
+
+  // Tema
   const themeBtn = $('#theme');
   function applyTheme(t){
     if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme');
     const dark = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
     themeBtn.textContent = dark ? '☀️' : '🌙';
   }
-  applyTheme(store.get('theme', null));
+  applyTheme(store.get('theme', 'light'));
   themeBtn.onclick = () => {
-    const dark = themeBtn.textContent === '☀️';
-    const t = dark ? 'light' : 'dark'; store.set('theme', t); applyTheme(t);
+    const isDark = themeBtn.textContent === '☀️';
+    const t = isDark ? 'light' : 'dark';
+    store.set('theme', t);
+    applyTheme(t);
   };
+
+  // Filtros
   function renderChips(){
+    if (mode === 'docs'){
+      if (!DOCS){ $('#chips').innerHTML = ''; return; }
+      const dc = {}; DOCS.docs.forEach(d => dc[d.cat] = (dc[d.cat]||0) + 1);
+      $('#chips').innerHTML = [['all', 'Todos', DOCS.docs.length]].concat(DOCS.cats.map(c => [c.id, c.ic + ' ' + c.nome, dc[c.id]||0]))
+        .map(([id, n, c]) => `<button class="chip" data-f="${id}" aria-pressed="${filter===id}">${n}<b>${c}</b></button>`).join('');
+      return;
+    }
     const counts = {}; RX.forEach(r => counts[r.cat] = (counts[r.cat]||0) + 1);
     const items = [['all', 'Todas', RX.length], ['fav', '★ Favoritas', favs.length]]
       .concat(CATS.map(c => [c.id, c.ic + ' ' + c.nome, counts[c.id]||0]));
@@ -251,8 +455,16 @@ function iniciar(){
       `<button class="chip" data-f="${id}" aria-pressed="${filter===id}">${n}<b>${c}</b></button>`).join('');
   }
   $('#chips').onclick = e => { const b = e.target.closest('.chip'); if(!b) return; filter = b.dataset.f; renderChips(); renderList(); };
+
+  // Lista
   function results(){
     const q = norm($('#q').value.trim());
+    if (mode === 'docs'){
+      if (!DOCS) return [];
+      let l = filter === 'all' ? DOCS.docs : DOCS.docs.filter(d => d.cat === filter);
+      if (q){ const t = q.split(/\s+/); l = l.filter(d => t.every(x => d._idx.includes(x))); }
+      return l;
+    }
     let list = RX;
     if (filter === 'fav') list = list.filter(r => favs.includes(r.id));
     else if (filter !== 'all') list = list.filter(r => r.cat === filter);
@@ -263,36 +475,55 @@ function iniciar(){
     }
     return list;
   }
+
   function renderList(){
     const list = results();
     $('#clear').style.display = $('#q').value ? 'block' : 'none';
+    $('#q').placeholder = mode === 'docs' ? 'Buscar documento — ex.: atestado, comparecimento, recusa' : 'Buscar doença, sintoma ou CID';
+    if (mode === 'docs'){
+      if (!DOCS){ $('#count').textContent = ''; $('#list').innerHTML = upsellDocs(); ligarUpsell(); return; }
+      $('#count').textContent = list.length + (list.length === 1 ? ' modelo' : ' modelos');
+      $('#list').innerHTML = list.length ? list.map(d => `
+        <button class="item ${currentDoc && currentDoc.id===d.id ? 'on':''}" data-doc="${d.id}">
+          <span class="ic">${docCat[d.cat].ic}</span>
+          <span class="tx"><span class="nm">${d.nome}</span><br><span class="mt">${docCat[d.cat].nome}</span></span>
+        </button>`).join('')
+        : `<div class="empty">Nenhum modelo para “${esc($('#q').value)}”.</div>`;
+      return;
+    }
     $('#count').textContent = list.length + (list.length === 1 ? ' condição' : ' condições');
     $('#list').innerHTML = list.length ? list.map(r => `
       <button class="item ${current && current.id===r.id ? 'on':''}" data-id="${r.id}">
-        <span class="ic">${catById[r.cat].ic}</span>
-        <span class="tx"><span class="nm">${r.nome}</span><br><span class="mt">CID ${r.cid} · ${catById[r.cat].nome}</span></span>
+        <span class="ic">${(catById[r.cat]||{}).ic || '💊'}</span>
+        <span class="tx"><span class="nm">${r.nome}</span><br><span class="mt">CID ${r.cid} · ${(catById[r.cat]||{}).nome || ''}</span></span>
         <span class="st ${favs.includes(r.id)?'fav':''}">★</span>
       </button>`).join('')
       : `<div class="empty">Nada encontrado para “${esc($('#q').value)}”.<br>Tente outro nome, sintoma ou o CID.</div>`;
   }
-  $('#list').onclick = e => { const b = e.target.closest('.item'); if (!b) return; location.hash = '#/' + b.dataset.id; };
+
+  $('#list').onclick = e => { const b = e.target.closest('.item'); if (!b) return; location.hash = b.dataset.doc ? '#/doc/' + b.dataset.doc : '#/' + b.dataset.id; };
   $('#q').addEventListener('input', renderList);
-  $('#q').addEventListener('keydown', e => { if (e.key === 'Enter'){ const r = results()[0]; if (r) location.hash = '#/' + r.id; } });
+  $('#q').addEventListener('keydown', e => { if (e.key === 'Enter'){ const r = results()[0]; if (r) location.hash = (mode === 'docs' ? '#/doc/' : '#/') + r.id; } });
   $('#clear').onclick = () => { $('#q').value=''; renderList(); $('#q').focus(); };
+
+  // Formatar texto do receituário
   function buildRx(r, v){
-    const itens = r.variantes[v].itens;
+    const itens = (r.variantes[v] || r.variantes[0]).itens;
     let out = [], lastVia = null, n = 0;
     itens.forEach(it => {
       if (it.via !== lastVia){ if (out.length) out.push(''); out.push('USO ' + it.via); out.push(''); lastVia = it.via; }
       n++;
       const head = n + '. ' + it.m;
-      out.push(showQty ? head + ' ' + '-'.repeat(Math.max(3, 40 - head.length - it.q.length)) + ' ' + it.q : head);
+      out.push(showQty ? head + ' ' + '-'.repeat(Math.max(3, 40 - head.length - (it.q||'').length)) + ' ' + (it.q||'') : head);
       out.push('   ' + it.p);
     });
     return out.join('\n');
   }
+
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
   function renderDetail(){
+    if (mode === 'docs') return renderDoc();
     const d = $('#detail');
     if (!current){
       d.className = 'detail' + (matchMedia('(min-width:900px)').matches ? ' show' : '');
@@ -302,20 +533,12 @@ function iniciar(){
       return;
     }
     const r = current, fav = favs.includes(r.id);
+    const temPS = PS_IDS.has(r.id) || !!psById[r.id], psItem = PS ? psById[r.id] : null;
+    const verPS = temPS && aba === 'ps';
     d.className = 'detail show';
     document.body.classList.toggle('lock', !matchMedia('(min-width:900px)').matches);
-    d.innerHTML = `
-      <div class="d-head">
-        <button class="back" id="back" aria-label="Voltar">←</button>
-        <div class="grow"></div>
-        <button class="icon-btn" id="fav" title="Favoritar" style="color:${fav?'var(--star)':'var(--muted)'}">${fav?'★':'☆'}</button>
-      </div>
-      <div class="d-body">
-        <h1 class="d-title">${r.nome}</h1>
-        <div class="d-meta">
-          <button class="tag cid" id="cid" title="Copiar CID">CID ${r.cid} ⧉</button>
-          <span class="tag">${catById[r.cat].ic} ${catById[r.cat].nome}</span>
-        </div>
+
+    const corpoAlta = `
         ${r.variantes.length > 1 ? `<div class="tabs" role="tablist">${r.variantes.map((v,i) =>
           `<button class="tab" role="tab" data-v="${i}" aria-selected="${i===variant}">${v.nome}</button>`).join('')}</div>` : ''}
         <div class="card">
@@ -335,18 +558,52 @@ function iniciar(){
           <div class="card-h"><h3>⚠ Sinais de alarme — retornar imediatamente</h3></div>
           <p class="p">${r.alarme}</p>
         </div>
-        ${r.obs ? `<div class="card note"><div class="card-h"><h3>Nota para o médico</h3></div><p class="p">${r.obs}</p></div>` : ''}
+        ${r.obs ? `<div class="card note"><div class="card-h"><h3>Nota para o médico</h3></div><p class="p">${r.obs}</p></div>` : ''}`;
+
+    const corpoPS = !psItem ? upsellPack('ps') : `
+        ${psItem.variantes.length > 1 ? `<div class="tabs" role="tablist">${psItem.variantes.map((v,i) =>
+          `<button class="tab ps-tab" role="tab" data-pv="${i}" aria-selected="${i===psVariant}">${v.nome}</button>`).join('')}</div>` : ''}
+        <div class="card">
+          <div class="card-h"><h3>Prescrição — sala de medicação</h3><span class="edited" id="edited">editado</span>
+            <label class="opt">Diluição <span class="sw"><input type="checkbox" id="dil" ${showDil?'checked':''}><span></span></span></label></div>
+          <textarea class="rx" id="rx" spellcheck="false"></textarea>
+          <div class="card-f">
+            <button class="btn primary" id="copy">Copiar prescrição</button>
+            <button class="btn" id="reset" title="Voltar ao texto original">Restaurar</button>
+          </div>
+        </div>
+        ${psItem.obs ? `<div class="card note"><div class="card-h"><h3>Nota para o médico</h3></div><p class="p">${psItem.obs}</p></div>` : ''}`;
+
+    d.innerHTML = `
+      <div class="d-head">
+        <button class="back" id="back" aria-label="Voltar">←</button>
+        <div class="grow"></div>
+        <button class="icon-btn" id="fav" title="Favoritar" style="color:${fav?'var(--star)':'var(--muted)'}">${fav?'★':'☆'}</button>
+      </div>
+      <div class="d-body">
+        <h1 class="d-title">${r.nome}</h1>
+        <div class="d-meta">
+          <button class="tag cid" id="cid" title="Copiar CID">CID ${r.cid} ⧉</button>
+          <span class="tag">${(catById[r.cat]||{}).ic || '💊'} ${(catById[r.cat]||{}).nome || ''}</span>
+        </div>
+        ${temPS ? `<div class="modes sub" id="abas"><button data-a="alta" aria-pressed="${!verPS}">🏠 Receita de alta</button><button data-a="ps" aria-pressed="${verPS}">🏥 No PS${PS ? '' : ' 🔒'}</button></div>` : ''}
+        ${verPS ? corpoPS : corpoAlta}
         ${r.ref ? `<div class="ref"><b>📚 Referência:</b> ${r.ref}</div>` : ''}
         <p class="disc">Material de apoio para profissionais médicos. Confira doses, alergias, interações, função renal, gestação e peso antes de prescrever. A prescrição final é de responsabilidade do médico assistente. As referências indicam a diretriz ou o protocolo que embasa a conduta; confira sempre a edição vigente.</p>
       </div>`;
+
     $('#back').onclick = () => { history.length > 1 ? history.back() : (location.hash = ''); };
     $('#fav').onclick = () => {
       favs = fav ? favs.filter(x => x !== r.id) : favs.concat(r.id);
       store.set('favs', favs); renderChips(); renderList(); renderDetail();
     };
     $('#cid').onclick = () => copy(r.cid, 'CID copiado');
+    if (temPS) $('#abas').onclick = e => { const b = e.target.closest('button'); if (b){ aba = b.dataset.a; store.set('aba', aba); renderDetail(); } };
+    if (verPS && !psItem){ ligarUpsell(); return; }
+
     const ta = $('#rx');
-    const refazer = () => { ta.value = buildRx(r, variant); fit(ta); $('#edited').style.display = 'none'; };
+    const gerar = () => verPS ? buildPS(psItem, psVariant) : buildRx(r, variant);
+    const refazer = () => { ta.value = gerar(); fit(ta); $('#edited').style.display = 'none'; };
     refazer();
     ta.oninput = () => { fit(ta); $('#edited').style.display = 'inline'; };
     $('#reset').onclick = refazer;
@@ -355,34 +612,341 @@ function iniciar(){
       const b = $('#copy'); b.textContent = '✓ Copiado'; b.classList.add('ok');
       setTimeout(() => { b.textContent = 'Copiar prescrição'; b.classList.remove('ok'); }, 1600);
     };
+
+    if (verPS){
+      d.querySelectorAll('.ps-tab').forEach(b => b.onclick = () => { psVariant = +b.dataset.pv; renderDetail(); });
+      $('#dil').onchange = e => { showDil = e.target.checked; store.set('dil', showDil); refazer(); };
+      return;
+    }
     d.querySelectorAll('.tab').forEach(b => b.onclick = () => { variant = +b.dataset.v; renderDetail(); });
     $('#qty').onchange = e => { showQty = e.target.checked; store.set('qty', showQty); refazer(); };
     $('#copyOr').onclick = () => copy(r.orient + '\n\nSINAIS DE ALARME — procure atendimento imediatamente se: ' + r.alarme, 'Orientações copiadas');
   }
+
+  // Prescrição da sala de medicação
+  function buildPS(item, v){
+    const vv = (item.variantes && item.variantes[v]) ? item.variantes[v] : item.variantes[0];
+    const linhas = vv.itens.map((it, i) => {
+      let m = it.m, adm = it.adm || '';
+      if (!showDil){
+        m = m.replace(/\s+(diluíd[oa]s?|reconstituíd[oa]|em SF 0,9%|em 2 mL de lidocaína).*$/i, '');
+        adm = adm.split(/;\s*/).filter(s => !/^(correr|lento|infundir|em \d)/i.test(s.trim())).join('; ');
+      }
+      return `${i + 1}. ${m} — ${it.via}${adm ? ', ' + adm : ''}`;
+    });
+    const cuid = (vv.cuidados || []).map(c => '- ' + c);
+    return 'PRESCRIÇÃO — SALA DE MEDICAÇÃO\n\n' + linhas.join('\n') + (cuid.length ? '\n\nCUIDADOS\n' + cuid.join('\n') : '');
+  }
+
+  // Upsells
+  function upsellPack(id){
+    if (id === 'ps') return `<div class="upsell"><div style="font-size:34px">🏥</div><h2>Prescrições da Sala de Medicação</h2>
+      <p style="color:var(--muted);margin:0">Complemento não ativado neste aparelho. Cobre a medicação do paciente ainda no PS: EV, IM e nebulização, hidratação, antieméticos e analgesia escalonada.</p>
+      <p style="font-size:14px;margin:14px 0 0">Tem um código deste complemento? Digite para liberar:</p>
+      <form id="upForm"><input id="upCode" placeholder="RX-XXXX-XXXX" autocomplete="off"><button class="btn primary" style="min-width:0;flex:none">Liberar</button></form></div>`;
+    return upsellDocs();
+  }
+  function upsellDocs(){
+    return `<div class="upsell"><div style="font-size:34px">📄</div><h2>Kit Documentos do Plantão</h2>
+      <p style="color:var(--muted);margin:0">Complemento não ativado neste aparelho. Reúne mais de 50 modelos: atestados, declarações, encaminhamentos, pedidos de exame, termos de recusa e relatórios.</p>
+      <p style="font-size:14px;margin:14px 0 0">Tem um código deste complemento? Digite para liberar:</p>
+      <form id="upForm"><input id="upCode" placeholder="RX-XXXX-XXXX" autocomplete="off"><button class="btn primary" style="min-width:0;flex:none">Liberar</button></form></div>`;
+  }
+
+  function ligarUpsell(){
+    const f = $('#upForm'); if (!f) return;
+    f.onsubmit = e => { e.preventDefault(); const v = $('#upCode').value.trim(); if (v) window.adicionarCodigo(v); };
+  }
+
+  const UNI = ['zero','um','dois','três','quatro','cinco','seis','sete','oito','nove','dez','onze','doze','treze','quatorze','quinze','dezesseis','dezessete','dezoito','dezenove'];
+  const DEZ = ['','','vinte','trinta','quarenta','cinquenta','sessenta','setenta','oitenta','noventa'];
+  const CEM = ['','cento','duzentos','trezentos','quatrocentos','quinhentos','seiscentos','setecentos','oitocentos','novecentos'];
+  function extenso(n){
+    n = Math.floor(Math.abs(+n)); if (isNaN(n)) return '';
+    if (n < 20) return UNI[n];
+    if (n < 100) return DEZ[Math.floor(n/10)] + (n % 10 ? ' e ' + UNI[n % 10] : '');
+    if (n === 100) return 'cem';
+    if (n < 1000) return CEM[Math.floor(n/100)] + (n % 100 ? ' e ' + extenso(n % 100) : '');
+    return String(n);
+  }
+
+  const MESES = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  const isoParaData = iso => { const [y,m,d] = (iso||'').split('-').map(Number); return y ? new Date(y, m-1, d) : null; };
+  const br = dt => dt ? String(dt.getDate()).padStart(2,'0') + '/' + String(dt.getMonth()+1).padStart(2,'0') + '/' + dt.getFullYear() : '';
+
+  function gerarTexto(doc){
+    const v = Object.assign({}, G, valores[doc.id]);
+    const dt = isoParaData(G.data);
+    v.data = br(dt);
+    v.data_ext = dt ? `${dt.getDate()} de ${MESES[dt.getMonth()]} de ${dt.getFullYear()}` : '';
+    (doc.campos || []).filter(c => c.tipo === 'number').forEach(c => { v[c.k + '_ext'] = v[c.k] !== '' && v[c.k] != null ? extenso(v[c.k]) : ''; });
+    if (dt && +v.dias > 0){ const f = new Date(dt); f.setDate(f.getDate() + (+v.dias) - 1); v.fim = br(f); }
+    const tem = k => v[k] !== undefined && v[k] !== null && v[k] !== false && String(v[k]).trim() !== '';
+    let t = doc.texto.replace(/\[\[(!?)(\w+):([\s\S]*?)\]\]/g, (m, neg, k, dentro) => (neg ? !tem(k) : tem(k)) ? dentro : '');
+    t = t.replace(/\{\{(\w+)\}\}/g, (m, k) => tem(k) ? String(v[k]).trim() : '________');
+    return t + `\n\n${G.cidade || 'Local'}, ${v.data_ext || 'Data'}.\n\n\n______________________________\n${G.medico || 'Médico(a) Assistente'}\nCRM ${G.crm || '________'}`;
+  }
+
+  function campoHTML(c, val, pref){
+    const id = pref + c.k, attr = `id="${id}" data-k="${c.k}"`;
+    if (c.tipo === 'check') return `<label class="f chk"><input type="checkbox" ${attr} ${val ? 'checked' : ''}>${c.label}</label>`;
+    let input;
+    if (c.tipo === 'area') input = `<textarea ${attr} placeholder="${esc(c.ph||'')}">${esc(val||'')}</textarea>`;
+    else if (c.tipo === 'select') input = `<select ${attr}>${c.opts.map(o => `<option ${o===val?'selected':''}>${o}</option>`).join('')}</select>`;
+    else input = `<input ${attr} type="${c.tipo === 'number' ? 'number' : c.tipo === 'time' ? 'time' : c.tipo === 'date' ? 'date' : 'text'}" ${c.tipo==='number'?'min="1" inputmode="numeric"':''} value="${esc(val ?? '')}" placeholder="${esc(c.ph||'')}">`;
+    return `<label class="f ${c.tipo === 'area' ? 'full' : ''}"><span>${c.label}</span>${input}</label>`;
+  }
+
+  function renderDoc(){
+    const d = $('#detail');
+    if (!currentDoc){
+      d.className = 'detail' + (matchMedia('(min-width:900px)').matches ? ' show' : '');
+      d.innerHTML = DOCS ? `<div class="welcome"><h2>Escolha um modelo de documento</h2>
+        Preencha os dados do paciente, ajuste os campos e toque em <b>Copiar documento</b>. Seu nome, CRM e cidade ficam salvos neste aparelho.</div>` : '';
+      document.body.classList.remove('lock');
+      return;
+    }
+    const doc = currentDoc;
+    if (!valores[doc.id]) valores[doc.id] = Object.fromEntries((doc.campos || []).map(c => [c.k, c.def ?? (c.tipo === 'check' ? false : '')]));
+    const vals = valores[doc.id];
+    const gPac = [{ k: 'paciente', label: 'Nome do paciente', tipo: 'text' }, { k: 'doc_paciente', label: 'Documento (opcional)', tipo: 'text', ph: 'CPF, RG ou CNS' }, { k: 'data', label: 'Data', tipo: 'date' }];
+    const gMed = [{ k: 'medico', label: 'Seu nome', tipo: 'text', ph: 'Dr(a). Nome Sobrenome' }, { k: 'crm', label: 'CRM / UF', tipo: 'text', ph: '000000/SP' }, { k: 'cidade', label: 'Cidade', tipo: 'text' }];
+    const semMedico = !(G.medico && G.crm);
+    d.className = 'detail show';
+    document.body.classList.toggle('lock', !matchMedia('(min-width:900px)').matches);
+    d.innerHTML = `
+      <div class="d-head"><button class="back" id="back" aria-label="Voltar">←</button><div class="grow"></div></div>
+      <div class="d-body">
+        <h1 class="d-title">${doc.nome}</h1>
+        <div class="d-meta"><span class="tag">${docCat[doc.cat].ic} ${docCat[doc.cat].nome}</span></div>
+        <div class="card"><div class="card-h"><h3>Paciente</h3></div>
+          <div class="form" id="fPac">${gPac.map(c => campoHTML(c, G[c.k], 'g_')).join('')}</div>
+          <p class="hint">Os dados do paciente não são salvos no aparelho.</p></div>
+        ${(doc.campos || []).length ? `<div class="card"><div class="card-h"><h3>Campos do documento</h3></div>
+          <div class="form" id="fDoc">${doc.campos.map(c => campoHTML(c, vals[c.k], 'c_')).join('')}</div></div>` : ''}
+        <details class="card" ${semMedico ? 'open' : ''}><summary>Seus dados (médico)${semMedico ? '' : ' — ' + esc(G.medico)}</summary>
+          <div class="form" id="fMed">${gMed.map(c => campoHTML(c, G[c.k], 'm_')).join('')}</div>
+          <p class="hint">Salvos neste aparelho para os próximos documentos.</p></details>
+        <div class="card">
+          <div class="card-h"><h3>Documento</h3><span class="edited" id="edited">editado</span></div>
+          <textarea class="rx" id="rx" spellcheck="false"></textarea>
+          <div class="card-f">
+            <button class="btn primary" id="copy">Copiar documento</button>
+            <button class="btn" id="reset" title="Gerar de novo a partir dos campos">Restaurar</button>
+          </div>
+        </div>
+        ${doc.obs ? `<div class="card note"><div class="card-h"><h3>Nota para o médico</h3></div><p class="p">${doc.obs}</p></div>` : ''}
+        <p class="disc">Modelo de apoio. Revise o texto antes de emitir; o documento é de responsabilidade do médico que o assina.</p>
+      </div>`;
+
+    const ta = $('#rx');
+    const atualizar = () => { ta.value = gerarTexto(doc); fit(ta); $('#edited').style.display = 'none'; };
+    const ler = el => el.type === 'checkbox' ? el.checked : el.value;
+    $('#fPac').oninput = e => { const el = e.target; if (el.dataset.k){ G[el.dataset.k] = ler(el); atualizar(); } };
+    $('#fMed').oninput = e => { const el = e.target; if (!el.dataset.k) return; G[el.dataset.k] = ler(el);
+      store.set('medico', { medico: G.medico, crm: G.crm, cidade: G.cidade }); atualizar(); };
+    const fd = $('#fDoc'); if (fd){ const h = e => { const el = e.target; if (el.dataset.k){ vals[el.dataset.k] = ler(el); atualizar(); } }; fd.oninput = h; fd.onchange = h; }
+    atualizar();
+    ta.oninput = () => { fit(ta); $('#edited').style.display = 'inline'; };
+    $('#reset').onclick = atualizar;
+    $('#back').onclick = () => { history.length > 1 ? history.back() : (location.hash = '#/docs'); };
+    $('#copy').onclick = () => {
+      copy(ta.value, 'Documento copiado');
+      const b = $('#copy'); b.textContent = '✓ Copiado'; b.classList.add('ok');
+      setTimeout(() => { b.textContent = 'Copiar documento'; b.classList.remove('ok'); }, 1600);
+    };
+  }
+
   function fit(ta){ ta.style.height = 'auto'; ta.style.height = (ta.scrollHeight + 4) + 'px'; }
+
   function copy(text, msg){
     const done = () => toast(msg);
     if (navigator.clipboard && window.isSecureContext){
       navigator.clipboard.writeText(text).then(done, () => fallback(text, done));
     } else fallback(text, done);
   }
+
   function fallback(text, done){
     const t = document.createElement('textarea'); t.value = text; t.style.position='fixed'; t.style.opacity='0';
     document.body.appendChild(t); t.select(); try{ document.execCommand('copy'); }catch(e){} t.remove(); done();
   }
-  let tt; function toast(m){ const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 1600); }
+
+  let tt;
+  function toast(m){
+    const t = $('#toast'); t.textContent = m; t.classList.add('show');
+    clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 1600);
+  }
+
   function route(){
     const id = location.hash.replace(/^#\//, '');
+    const novoModo = (temAbaDocs && (id === 'docs' || id.startsWith('doc/'))) ? 'docs' : 'rx';
+    if (novoModo !== mode){ mode = novoModo; filter = 'all'; renderChips(); }
+    if (temAbaDocs) $('#modes').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.dataset.m === mode));
+    if (mode === 'docs'){
+      currentDoc = id.startsWith('doc/') ? (docById[id.slice(4)] || null) : null;
+      renderList(); renderDetail();
+      if (currentDoc) window.scrollTo({ top: 0 });
+      return;
+    }
     const r = byId[id] || null;
-    if (r !== current){ variant = 0; }
+    if (r !== current){ variant = 0; psVariant = 0; }
     current = r;
     renderList(); renderDetail();
     if (r) window.scrollTo({ top: 0 });
   }
+
   window.addEventListener('hashchange', route);
   matchMedia('(min-width:900px)').addEventListener('change', renderDetail);
-  renderChips(); route();
+  renderChips();
+  route();
 }
+</script>
+<script>
+/* Skip artifact shell — fixed helpers served beside every artifact. */
+(function () {
+  "use strict";
+
+  var fmt = {
+    num: function (v, opts) { return new Intl.NumberFormat("pt-BR", opts || {}).format(v); },
+    brl: function (v) { return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(v); },
+    pct: function (v) { return new Intl.NumberFormat("pt-BR", { style: "percent", maximumFractionDigits: 1 }).format(v); }
+  };
+
+  // axisFmt keeps axis tick labels short (compact notation) so long values
+  // (e.g. full BRL amounts) never clip against the plot edge.
+  function axisFmt(v) {
+    return fmt.num(v, { notation: "compact", maximumFractionDigits: 1 });
+  }
+
+  // format accepts a function OR one of the fmt names ("num" | "brl" | "pct").
+  function coerceFormat(spec) {
+    if (typeof spec === "function") return spec;
+    if (typeof spec === "string" && fmt[spec]) return fmt[spec];
+    return function (v) { return fmt.num(v); };
+  }
+
+  function accent() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#2563eb";
+  }
+  function mutedColor() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--text-muted").trim() || "#5b6472";
+  }
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function frame(el, w, h) {
+    var svg = svgEl("svg", { viewBox: "0 0 " + w + " " + h, role: "img" });
+    el.innerHTML = "";
+    el.appendChild(svg);
+    return svg;
+  }
+
+  // maxOf guards the axis scale: empty values would give -Infinity (truthy,
+  // so "|| 1" can't catch it) and a non-positive max would flip the chart.
+  function maxOf(values) {
+    var m = values.length ? Math.max.apply(null, values) : 0;
+    return m > 0 ? m : 1;
+  }
+
+  // bar(el, {labels:[], values:[], color?, format?}) — vertical bar chart.
+  function bar(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 12, plotH = H - padT - padB;
+    var step = plotW / n, bw = Math.min(step * 0.62, 64);
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 12, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    cfg.values.forEach(function (v, i) {
+      var bh = Math.max(0, (v / max) * plotH);
+      var x = padL + i * step + (step - bw) / 2;
+      var y = padT + plotH - bh;
+      var r = svgEl("rect", { x: x, y: y, width: bw, height: bh, rx: 4, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(v);
+      r.appendChild(t);
+      svg.appendChild(r);
+      var tx = svgEl("text", { x: x + bw / 2, y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // line(el, {labels:[], values:[], color?, format?}) — single-series line.
+  function line(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 16, plotH = H - padT - padB;
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 16, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    var pts = cfg.values.map(function (v, i) {
+      var x = padL + (n === 1 ? plotW / 2 : (plotW * i) / (n - 1));
+      var y = padT + plotH - (v / max) * plotH;
+      return [x, y];
+    });
+    var d = pts.map(function (p, i) { return (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" ");
+    svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: color, "stroke-width": 2, "stroke-linejoin": "round" }));
+    pts.forEach(function (p, i) {
+      var c = svgEl("circle", { cx: p[0], cy: p[1], r: 3.5, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(cfg.values[i]);
+      c.appendChild(t);
+      svg.appendChild(c);
+      var tx = svgEl("text", { x: p[0], y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // donut(el, {labels:[], values:[], colors?}) — donut with center total.
+  function donut(el, cfg) {
+    var W = 320, H = 280, cx = W / 2, cy = H / 2, R = 92, r = 58;
+    var svg = frame(el, W, H);
+    var total = cfg.values.reduce(function (a, b) { return a + b; }, 0) || 1;
+    var palette = cfg.colors || [accent(), "#1baf7a", "#eda100", "#e34948", "#4a3aa7", "#e87ba4"];
+    var a0 = -Math.PI / 2;
+    cfg.values.forEach(function (v, i) {
+      var a1 = a0 + (v / total) * Math.PI * 2;
+      var large = a1 - a0 > Math.PI ? 1 : 0;
+      var p = ["M", cx + R * Math.cos(a0), cy + R * Math.sin(a0),
+        "A", R, R, 0, large, 1, cx + R * Math.cos(a1), cy + R * Math.sin(a1),
+        "L", cx + r * Math.cos(a1), cy + r * Math.sin(a1),
+        "A", r, r, 0, large, 0, cx + r * Math.cos(a0), cy + r * Math.sin(a0), "Z"].join(" ");
+      var path = svgEl("path", { d: p, fill: palette[i % palette.length] });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + fmt.num(v) + " (" + fmt.pct(v / total) + ")";
+      path.appendChild(t);
+      svg.appendChild(path);
+      a0 = a1;
+    });
+    var center = svgEl("text", { x: cx, y: cy + 5, "text-anchor": "middle", "font-size": 20, "font-weight": 650, fill: "currentColor" });
+    center.textContent = fmt.num(total);
+    svg.appendChild(center);
+  }
+
+  window.skipShell = { fmt: fmt };
+  window.skipChart = { bar: bar, line: line, donut: donut };
+})();
+
 </script>
 </body>
 </html>
