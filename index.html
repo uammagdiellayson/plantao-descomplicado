@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plantão Descomplicado · v3</title>
+<meta name="theme-color" content="#1d4ed8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6fa; --surface:#ffffff; --surface2:#eef2f7; --line:#dce3ed;
+  --text:#101b2d; --muted:#5b6b80; --brand:#1d4ed8; --brand-2:#3b82f6; --brand-ink:#ffffff;
+  --brand-soft:#dbeafe; --warn:#b45309; --warn-soft:#fef3c7; --danger:#b91c1c; --danger-soft:#fee2e2;
+  --star:#f59e0b; --shadow:0 1px 2px rgba(16,27,45,.06),0 4px 14px rgba(16,27,45,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1220; --surface:#111c30; --surface2:#16233c; --line:#24365a;
+    --text:#e6edf7; --muted:#93a5c0; --brand:#60a5fa; --brand-2:#3b82f6; --brand-ink:#0a1a38;
+    --brand-soft:#152647; --warn:#fbbf24; --warn-soft:#2d2410; --danger:#f87171; --danger-soft:#2c1515;
+    --shadow:0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1220; --surface:#111c30; --surface2:#16233c; --line:#24365a;
+  --text:#e6edf7; --muted:#93a5c0; --brand:#60a5fa; --brand-2:#3b82f6; --brand-ink:#0a1a38;
+  --brand-soft:#152647; --warn:#fbbf24; --warn-soft:#2d2410; --danger:#f87171; --danger-soft:#2c1515;
+  --shadow:0 1px 2px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:17px;flex:1;min-width:0}
+.logo i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--brand);color:var(--brand-ink);font-style:normal;font-weight:800;font-size:15px}
+.logo small{display:block;font-weight:500;color:var(--muted);font-size:12px;letter-spacing:0}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;width:38px;height:38px;display:grid;place-items:center;font-size:17px}
+.search-wrap{max-width:1200px;margin:0 auto;padding:0 16px 12px}
+.search{display:flex;align-items:center;gap:10px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:0 14px;box-shadow:var(--shadow)}
+.search:focus-within{border-color:var(--brand)}
+.search svg{flex:none;color:var(--muted)}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--text);font:inherit;font-size:16px;padding:13px 0;outline:none}
+.search .clear{border:0;background:none;color:var(--muted);font-size:20px;display:none;padding:4px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px 2px;max-width:1200px;margin:0 auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:500;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.chip b{font-weight:600;opacity:.6;margin-left:4px}
+.layout{max-width:1200px;margin:0 auto;padding:14px 16px 40px;display:grid;grid-template-columns:1fr;gap:18px}
+@media (min-width:900px){ .layout{grid-template-columns:360px 1fr;align-items:start} .list-col{position:sticky;top:200px;max-height:calc(100vh - 218px);overflow:auto;padding-right:4px} }
+.count{font-size:12.5px;color:var(--muted);margin:0 2px 8px;font-weight:500}
+.list{display:flex;flex-direction:column;gap:8px}
+.item{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;text-align:left;width:100%}
+.item:hover{border-color:var(--brand-2)}
+.item.on{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand) inset}
+.item .ic{flex:none;width:36px;height:36px;border-radius:10px;background:var(--surface2);display:grid;place-items:center;font-size:17px}
+.item .tx{flex:1;min-width:0}
+.item .nm{font-weight:600;line-height:1.3}
+.item .mt{font-size:12.5px;color:var(--muted)}
+.item .st{flex:none;color:var(--line);font-size:18px}
+.item .st.fav{color:var(--star)}
+.empty{text-align:center;color:var(--muted);padding:40px 16px;border:1px dashed var(--line);border-radius:12px}
+.detail{display:none}
+.detail.show{display:block}
+@media (max-width:899px){
+  .detail.show{position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding:0 0 40px}
+  body.lock{overflow:hidden}
+}
+.d-head{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:10px}
+@media (min-width:900px){ .d-head{position:static;border:0;padding:0 0 6px;background:none} .d-head .back{display:none} }
+.back{border:0;background:none;font-size:22px;padding:4px 8px 4px 0}
+.d-head .grow{flex:1}
+.d-body{padding:14px 16px}
+@media (min-width:900px){ .d-body{padding:0} }
+.d-title{font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:0 0 8px}
+.d-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+.tag{font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 9px;background:var(--surface2);color:var(--muted);border:0}
+.tag.cid{background:var(--brand-soft);color:var(--brand)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tab{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:7px 12px;font-size:13.5px;font-weight:600}
+.tab[aria-selected="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);margin-bottom:14px}
+.card-h{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.card-h h3{margin:0;font-size:14px;font-weight:700;flex:1}
+.card-h .opt{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.rx{display:block;width:100%;border:0;background:transparent;color:var(--text);font:13.5px/1.6 "JetBrains Mono",ui-monospace,monospace;padding:14px;resize:vertical;min-height:120px;outline:none;white-space:pre-wrap}
+@media (max-width:600px){ .rx{font-size:11.5px;padding:12px 10px} }
+.rx:focus{background:var(--surface2)}
+.card-f{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line);flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:11px;padding:10px 14px;font-weight:600;font-size:14px}
+.btn.primary{flex:1;min-width:200px;background:var(--brand);border-color:var(--brand);color:var(--brand-ink);font-size:15.5px;padding:13px 16px}
+.btn.primary.ok{background:#16a34a;border-color:#16a34a;color:#fff}
+.edited{font-size:12px;color:var(--warn);font-weight:600;display:none}
+.p{padding:12px 14px;margin:0}
+.alarm{background:var(--danger-soft);border-color:transparent}
+.alarm .card-h{border-color:transparent;color:var(--danger)}
+.alarm .p{padding-top:0}
+.note{background:var(--brand-soft);border-color:transparent}
+.note .card-h{border-color:transparent;color:var(--brand)}
+.note .p{padding-top:0}
+.ref{font-size:13px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:10px 14px;margin-bottom:14px;line-height:1.5}
+.ref b{color:var(--text);font-weight:600}
+.disc{font-size:12px;color:var(--muted);margin-top:18px;line-height:1.5}
+.welcome{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;color:var(--muted)}
+.welcome h2{color:var(--text);margin:0 0 6px;font-size:20px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:60}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.sw{position:relative;width:34px;height:20px;flex:none}
+.sw input{opacity:0;width:0;height:0}
+.sw span{position:absolute;inset:0;background:var(--line);border-radius:20px;transition:.15s}
+.sw span:before{content:"";position:absolute;width:14px;height:14px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.15s}
+.sw input:checked+span{background:var(--brand)}
+.sw input:checked+span:before{transform:translateX(14px)}
+body:not(.unlocked) .top, body:not(.unlocked) .layout{display:none}
+#lock{display:none;min-height:100vh;place-items:center;padding:24px 16px}
+#lock.show{display:grid}
+.lock-box{width:100%;max-width:380px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px 22px;box-shadow:var(--shadow);text-align:center}
+.lock-l{display:block;font-weight:600;margin-bottom:10px}
+.lock-box input{width:100%;font:600 18px "JetBrains Mono",monospace;text-align:center;letter-spacing:.06em;text-transform:uppercase;padding:13px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);margin-bottom:12px;outline:none}
+.lock-box input:focus{border-color:var(--brand)}
+.lock-err{color:var(--danger);font-size:14px;min-height:20px;margin:10px 0 0}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="bar">
+    <div class="logo"><i>PD</i><div>Plantão Descomplicado<small>Prescrições prontas para o plantão · Dr. Magdiel</small></div></div>
+    <button class="icon-btn" id="theme" title="Modo claro/escuro" aria-label="Alternar modo claro e escuro">🌙</button>
+    <button class="icon-btn" onclick="sairDoApp()" title="Sair deste aparelho" aria-label="Sair">⎋</button>
+  </div>
+  <div class="search-wrap">
+    <label class="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="text" enterkeyhint="search" autocomplete="off" placeholder="Buscar doença, sintoma ou CID">
+      <button class="clear" id="clear" aria-label="Limpar busca">×</button>
+    </label>
+  </div>
+  <nav class="chips" id="chips"></nav>
+</header>
+<main class="layout">
+  <section class="list-col">
+    <div class="count" id="count"></div>
+    <div class="list" id="list"></div>
+  </section>
+  <section class="detail" id="detail"></section>
+</main>
+<div class="toast" id="toast"></div>
+<div class="lock" id="lock">
+  <div class="lock-box">
+    <div class="logo" style="justify-content:center;margin-bottom:18px"><i>PD</i><div style="text-align:left">Plantão Descomplicado<small>Prescrições prontas para o plantão · Dr. Magdiel</small></div></div>
+    <label for="code" class="lock-l">Carregando prescrições…</label>
+    <input id="code" autocomplete="off" spellcheck="false" placeholder="RX-XXXX-XXXX">
+    <button class="btn primary" id="enter" type="button" style="width:100%;min-width:0">Entrar</button>
+    <p class="lock-err" id="lockErr"></p>
+  </div>
+</div>
+<script>
+(async function(){
+  const lock = document.getElementById('lock'), err = document.getElementById('lockErr');
+  const inp = document.getElementById('code'), btn = document.getElementById('enter');
+  function falha(msg){
+    document.querySelector('.lock-box .lock-l').textContent = 'Falha ao carregar os dados';
+    if (inp) inp.style.display = 'none';
+    if (btn) btn.style.display = 'none';
+    err.textContent = msg;
+    lock.classList.add('show');
+  }
+  function parseCSV(text){
+    text = String(text).replace(/^\uFEFF/, '');
+    const conta = (s, ch) => s.split(ch).length - 1;
+    function amostra(){
+      const out = []; let start = 0;
+      for (let i = 0; i <= text.length && out.length < 12; i++){
+        if (i === text.length || text[i] === '\n' || text[i] === '\r'){
+          const linha = text.slice(start, i);
+          if (linha.trim()) out.push(linha);
+          start = i + 1;
+          if (text[i] === '\r' && text[i + 1] === '\n') i++;
+        }
+      }
+      return out;
+    }
+    function parseCom(sep){
+      const rows = []; let row = [], field = '', inQ = false;
+      for (let i = 0; i < text.length; i++){
+        const c = text[i];
+        if (inQ){
+          if (c === '"'){ if (text[i + 1] === '"'){ field += '"'; i++; } else inQ = false; }
+          else field += c;
+        } else {
+          if (c === '"') inQ = true;
+          else if (c === sep){ row.push(field); field = ''; }
+          else if (c === '\n'){ row.push(field.replace(/\r$/, '')); field = ''; rows.push(row); row = []; }
+          else field += c;
+        }
+      }
+      if (field !== '' || row.length){ row.push(field.replace(/\r$/, '')); rows.push(row); }
+      return rows.filter(r => r.some(x => String(x).trim() !== ''));
+    }
+    function nota(rows){
+      if (!rows.length) return -1;
+      const head = rows[0].length;
+      if (head < 2) return -1;
+      const dados = rows.slice(1);
+      if (!dados.length) return 0.5;
+      let ok = 0;
+      for (const r of dados) if (r.length === head) ok++;
+      return ok / dados.length;
+    }
+    const am = amostra().join('\n');
+    let melhor = null, melhorNota = -Infinity, melhorSep = ',';
+    for (const sep of [',', ';', '\t']){
+      const rows = parseCom(sep);
+      const n = nota(rows);
+      if (n > melhorNota || (n === melhorNota && conta(am, sep) > conta(am, melhorSep))){
+        melhorNota = n; melhor = rows; melhorSep = sep;
+      }
+    }
+    return melhor || [];
+  }
+  const tabela = (text) => {
+    const r = parseCSV(text);
+    if (!r.length) return [];
+    const head = r.shift().map(h => String(h).replace(/^\uFEFF/, '').trim());
+    return r.map(l => Object.fromEntries(head.map((h, i) => [h, l[i] ?? ''])));
+  };
+  try{
+    const get = async f => {
+      const pastas = ['data/', 'dados/'];
+      const nomes = [f, 'data_' + f];
+      let ultimoErro;
+      for (const p of pastas){
+        for (const n of nomes){
+          try {
+            const t = await fetch(p + n, { cache: 'no-cache' });
+            if (!t.ok) throw new Error(p + n);
+            const buf = await t.arrayBuffer();
+            let txt = new TextDecoder('utf-8').decode(buf);
+            if (txt.includes('\uFFFD')){ try { txt = new TextDecoder('windows-1252').decode(buf); } catch(e){} }
+            return txt;
+          } catch(e){ ultimoErro = e; }
+        }
+      }
+      throw ultimoErro || new Error(f);
+    };
+    const CATS = tabela(await get('categorias.csv')).map(c => ({ id: c.id, nome: c.nome, ic: c.ic }));
+    const RX = tabela(await get('condicoes.csv')).map(c => ({ id: c.id, nome: c.nome, cid: c.cid, cat: c.cat, sin: c.sin, orient: c.orient, alarme: c.alarme, obs: c.obs, ref: c.ref, variantes: [] }));
+    const byId = Object.fromEntries(RX.map(r => [r.id, r]));
+    for (const m of tabela(await get('medicamentos.csv'))){
+      const r = byId[m.id_condicao]; if (!r) continue;
+      let v = r.variantes.find(x => x.nome === m.variante);
+      if (!v){ v = { nome: m.variante || 'Padrão', itens: [] }; r.variantes.push(v); }
+      v.itens.push({ via: m.via, m: m.m, q: m.q, p: m.p });
+    }
+    const validas = RX.filter(r => r.variantes.length && r.variantes.every(v => v.itens.length));
+    if (!validas.length) throw new Error('vazio');
+    if (!String(validas[0].nome || '').trim()) throw new Error('colunas');
+    window.CATS = CATS; window.RX = validas;
+    window.PACKS = {}; window.PACK_LIST = [];
+    window.adicionarCodigo = () => location.reload();
+    window.sairDoApp = () => location.reload();
+    lock.classList.remove('show');
+    document.body.classList.add('unlocked');
+    iniciar();
+  }catch(e){
+    const m = String((e && e.message) || e);
+    let msg;
+    if (m.indexOf('.csv') > -1) msg = 'Não encontrei o arquivo "' + m + '" no repositório — testei as pastas data/ e dados/, com e sem o prefixo data_. Confira no GitHub o nome exato do arquivo e a pasta em que ele está.';
+    else if (m === 'vazio') msg = 'Os arquivos foram encontrados e lidos, mas nenhuma condição pôde ser montada. Causas comuns: os CSVs contêm apenas o cabeçalho (sem linhas de dados) ou a coluna id_condicao do medicamentos.csv não corresponde à coluna id do condicoes.csv.';
+    else if (m === 'colunas') msg = 'Os arquivos foram lidos, mas as colunas não correspondem ao esperado (id, nome, cid, cat, sin, orient, alarme, obs, ref / id_condicao, variante, via, m, q, p). Confira a primeira linha de cada CSV.';
+    else msg = 'Erro inesperado: ' + m;
+    falha(msg);
+  }
+})();
+</script>
+<script>
+function iniciar(){
+  const $ = s => document.querySelector(s);
+  const store = {
+    get(k, d){ try{ const v = localStorage.getItem('rrps.'+k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+    set(k, v){ try{ localStorage.setItem('rrps.'+k, JSON.stringify(v)); }catch(e){} }
+  };
+  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const catById = Object.fromEntries(CATS.map(c => [c.id, c]));
+  const byId = Object.fromEntries(RX.map(r => [r.id, r]));
+  RX.forEach(r => r._idx = norm([r.nome, r.cid, r.sin, catById[r.cat].nome].join(' ')));
+  let favs = store.get('favs', []);
+  let filter = 'all';
+  let current = null, variant = 0;
+  let showQty = store.get('qty', true);
+  const themeBtn = $('#theme');
+  function applyTheme(t){
+    if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme');
+    const dark = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    themeBtn.textContent = dark ? '☀️' : '🌙';
+  }
+  applyTheme(store.get('theme', null));
+  themeBtn.onclick = () => {
+    const dark = themeBtn.textContent === '☀️';
+    const t = dark ? 'light' : 'dark'; store.set('theme', t); applyTheme(t);
+  };
+  function renderChips(){
+    const counts = {}; RX.forEach(r => counts[r.cat] = (counts[r.cat]||0) + 1);
+    const items = [['all', 'Todas', RX.length], ['fav', '★ Favoritas', favs.length]]
+      .concat(CATS.map(c => [c.id, c.ic + ' ' + c.nome, counts[c.id]||0]));
+    $('#chips').innerHTML = items.map(([id, n, c]) =>
+      `<button class="chip" data-f="${id}" aria-pressed="${filter===id}">${n}<b>${c}</b></button>`).join('');
+  }
+  $('#chips').onclick = e => { const b = e.target.closest('.chip'); if(!b) return; filter = b.dataset.f; renderChips(); renderList(); };
+  function results(){
+    const q = norm($('#q').value.trim());
+    let list = RX;
+    if (filter === 'fav') list = list.filter(r => favs.includes(r.id));
+    else if (filter !== 'all') list = list.filter(r => r.cat === filter);
+    if (q){
+      const terms = q.split(/\s+/);
+      list = list.filter(r => terms.every(t => r._idx.includes(t)))
+        .sort((a,b) => (norm(b.nome).startsWith(q) - norm(a.nome).startsWith(q)));
+    }
+    return list;
+  }
+  function renderList(){
+    const list = results();
+    $('#clear').style.display = $('#q').value ? 'block' : 'none';
+    $('#count').textContent = list.length + (list.length === 1 ? ' condição' : ' condições');
+    $('#list').innerHTML = list.length ? list.map(r => `
+      <button class="item ${current && current.id===r.id ? 'on':''}" data-id="${r.id}">
+        <span class="ic">${catById[r.cat].ic}</span>
+        <span class="tx"><span class="nm">${r.nome}</span><br><span class="mt">CID ${r.cid} · ${catById[r.cat].nome}</span></span>
+        <span class="st ${favs.includes(r.id)?'fav':''}">★</span>
+      </button>`).join('')
+      : `<div class="empty">Nada encontrado para “${esc($('#q').value)}”.<br>Tente outro nome, sintoma ou o CID.</div>`;
+  }
+  $('#list').onclick = e => { const b = e.target.closest('.item'); if (!b) return; location.hash = '#/' + b.dataset.id; };
+  $('#q').addEventListener('input', renderList);
+  $('#q').addEventListener('keydown', e => { if (e.key === 'Enter'){ const r = results()[0]; if (r) location.hash = '#/' + r.id; } });
+  $('#clear').onclick = () => { $('#q').value=''; renderList(); $('#q').focus(); };
+  function buildRx(r, v){
+    const itens = r.variantes[v].itens;
+    let out = [], lastVia = null, n = 0;
+    itens.forEach(it => {
+      if (it.via !== lastVia){ if (out.length) out.push(''); out.push('USO ' + it.via); out.push(''); lastVia = it.via; }
+      n++;
+      const head = n + '. ' + it.m;
+      out.push(showQty ? head + ' ' + '-'.repeat(Math.max(3, 40 - head.length - it.q.length)) + ' ' + it.q : head);
+      out.push('   ' + it.p);
+    });
+    return out.join('\n');
+  }
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function renderDetail(){
+    const d = $('#detail');
+    if (!current){
+      d.className = 'detail' + (matchMedia('(min-width:900px)').matches ? ' show' : '');
+      d.innerHTML = `<div class="welcome"><h2>Busque a condição e copie a prescrição</h2>
+        Digite o nome da doença, um sintoma ou o CID. Abra a condição, ajuste se precisar e toque em <b>Copiar prescrição</b> para colar no prontuário.</div>`;
+      document.body.classList.remove('lock');
+      return;
+    }
+    const r = current, fav = favs.includes(r.id);
+    d.className = 'detail show';
+    document.body.classList.toggle('lock', !matchMedia('(min-width:900px)').matches);
+    d.innerHTML = `
+      <div class="d-head">
+        <button class="back" id="back" aria-label="Voltar">←</button>
+        <div class="grow"></div>
+        <button class="icon-btn" id="fav" title="Favoritar" style="color:${fav?'var(--star)':'var(--muted)'}">${fav?'★':'☆'}</button>
+      </div>
+      <div class="d-body">
+        <h1 class="d-title">${r.nome}</h1>
+        <div class="d-meta">
+          <button class="tag cid" id="cid" title="Copiar CID">CID ${r.cid} ⧉</button>
+          <span class="tag">${catById[r.cat].ic} ${catById[r.cat].nome}</span>
+        </div>
+        ${r.variantes.length > 1 ? `<div class="tabs" role="tablist">${r.variantes.map((v,i) =>
+          `<button class="tab" role="tab" data-v="${i}" aria-selected="${i===variant}">${v.nome}</button>`).join('')}</div>` : ''}
+        <div class="card">
+          <div class="card-h"><h3>Receituário</h3><span class="edited" id="edited">editado</span>
+            <label class="opt">Quantidades <span class="sw"><input type="checkbox" id="qty" ${showQty?'checked':''}><span></span></span></label></div>
+          <textarea class="rx" id="rx" spellcheck="false"></textarea>
+          <div class="card-f">
+            <button class="btn primary" id="copy">Copiar prescrição</button>
+            <button class="btn" id="reset" title="Voltar ao texto original">Restaurar</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h3>Orientações ao paciente</h3><button class="btn" id="copyOr" style="padding:6px 10px;font-size:13px">Copiar</button></div>
+          <p class="p">${r.orient}</p>
+        </div>
+        <div class="card alarm">
+          <div class="card-h"><h3>⚠ Sinais de alarme — retornar imediatamente</h3></div>
+          <p class="p">${r.alarme}</p>
+        </div>
+        ${r.obs ? `<div class="card note"><div class="card-h"><h3>Nota para o médico</h3></div><p class="p">${r.obs}</p></div>` : ''}
+        ${r.ref ? `<div class="ref"><b>📚 Referência:</b> ${r.ref}</div>` : ''}
+        <p class="disc">Material de apoio para profissionais médicos. Confira doses, alergias, interações, função renal, gestação e peso antes de prescrever. A prescrição final é de responsabilidade do médico assistente. As referências indicam a diretriz ou o protocolo que embasa a conduta; confira sempre a edição vigente.</p>
+      </div>`;
+    $('#back').onclick = () => { history.length > 1 ? history.back() : (location.hash = ''); };
+    $('#fav').onclick = () => {
+      favs = fav ? favs.filter(x => x !== r.id) : favs.concat(r.id);
+      store.set('favs', favs); renderChips(); renderList(); renderDetail();
+    };
+    $('#cid').onclick = () => copy(r.cid, 'CID copiado');
+    const ta = $('#rx');
+    const refazer = () => { ta.value = buildRx(r, variant); fit(ta); $('#edited').style.display = 'none'; };
+    refazer();
+    ta.oninput = () => { fit(ta); $('#edited').style.display = 'inline'; };
+    $('#reset').onclick = refazer;
+    $('#copy').onclick = () => {
+      copy(ta.value, 'Prescrição copiada');
+      const b = $('#copy'); b.textContent = '✓ Copiado'; b.classList.add('ok');
+      setTimeout(() => { b.textContent = 'Copiar prescrição'; b.classList.remove('ok'); }, 1600);
+    };
+    d.querySelectorAll('.tab').forEach(b => b.onclick = () => { variant = +b.dataset.v; renderDetail(); });
+    $('#qty').onchange = e => { showQty = e.target.checked; store.set('qty', showQty); refazer(); };
+    $('#copyOr').onclick = () => copy(r.orient + '\n\nSINAIS DE ALARME — procure atendimento imediatamente se: ' + r.alarme, 'Orientações copiadas');
+  }
+  function fit(ta){ ta.style.height = 'auto'; ta.style.height = (ta.scrollHeight + 4) + 'px'; }
+  function copy(text, msg){
+    const done = () => toast(msg);
+    if (navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(text).then(done, () => fallback(text, done));
+    } else fallback(text, done);
+  }
+  function fallback(text, done){
+    const t = document.createElement('textarea'); t.value = text; t.style.position='fixed'; t.style.opacity='0';
+    document.body.appendChild(t); t.select(); try{ document.execCommand('copy'); }catch(e){} t.remove(); done();
+  }
+  let tt; function toast(m){ const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 1600); }
+  function route(){
+    const id = location.hash.replace(/^#\//, '');
+    const r = byId[id] || null;
+    if (r !== current){ variant = 0; }
+    current = r;
+    renderList(); renderDetail();
+    if (r) window.scrollTo({ top: 0 });
+  }
+  window.addEventListener('hashchange', route);
+  matchMedia('(min-width:900px)').addEventListener('change', renderDetail);
+  renderChips(); route();
+}
+</script>
+</body>
+</html>
